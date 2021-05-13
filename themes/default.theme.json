@@ -1,0 +1,7 @@
+{
+  "platforms": ["desktop", "touch-phone", "touch-pad"],
+  "sources": [
+    "./tokens/typography.tokens.json",
+    "./tokens/**/*.tokens.json"
+  ]
+}
