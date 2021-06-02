@@ -52,7 +52,7 @@ async function main() {
 
 	const data = await getStylesArtboard(fileKey, query.url);
 
-	const baseDir = path.join(__dirname, tokens.baseDir);
+	const baseDir = path.join(process.cwd(), tokens.baseDir);
 
 	fs.existsSync(baseDir) && fs.rmdirSync(baseDir, { recursive: true });
 
