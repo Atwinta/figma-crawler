@@ -27,7 +27,7 @@ const platforms = {
 
 const tokens = {
 	type: 'tokens.json',
-	baseDir: `./${tokensDir}`,
+	baseDir: tokensDir,
 	base: [
 		'typography'
 	],
@@ -52,8 +52,12 @@ async function main() {
 
 	const data = await getStylesArtboard(fileKey, query.url);
 
+	const baseDir = path.join(__dirname, tokens.baseDir);
+
+	fs.existsSync(baseDir) && fs.rmdirSync(baseDir, { recursive: true });
+
 	['base', 'components'].forEach(type => {
-		const dirPath = path.join(tokens.baseDir, type === 'components' ? 'components' : '');
+		const dirPath = path.join(baseDir, type === 'components' ? 'components' : '');
 
 		fs.existsSync(dirPath) || fs.mkdirSync(dirPath, { recursive: true });
 
