@@ -30,8 +30,10 @@ This work with special preparation figma file.
 
 You can get file_key from URL: `https://www.figma.com/file/<file_key>`
 
+Optional argument `$dir`. Default `tokens`
+
 ```sh
-node main.js ${file_key}
+node main.js ${file_key} $dir
 ```
 
 ### Build css variables by [themekit](https://github.com/bem/themekit)
