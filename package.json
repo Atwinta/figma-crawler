@@ -5,11 +5,13 @@
 	"private": true,
 	"license": "MIT",
 	"dependencies": {
-		"@yandex/themekit": "1.6.7",
 		"dotenv": "^9.0.2",
 		"node-fetch": "^2.6.1"
 	},
 	"publishConfig": {
 		"@5th_ru:registry": "https://gitlab.com/api/v4/projects/26615116/packages/npm/"
+	},
+	"peerDependencies": {
+		"@yandex/themekit": "1.6.7"
 	}
 }
