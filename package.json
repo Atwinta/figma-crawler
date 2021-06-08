@@ -9,6 +9,7 @@
 		"node-fetch": "^2.6.1"
 	},
 	"publishConfig": {
+		"access": "restricted",
 		"@5th_ru:registry": "https://gitlab.com/api/v4/projects/26615116/packages/npm/"
 	},
 	"peerDependencies": {
