@@ -3,6 +3,10 @@
 	"version": "0.1.0",
 	"description": "",
 	"license": "MIT",
+	"repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/5th_ru/figma-crawler.git"
+  },
 	"dependencies": {
 		"dotenv": "^9.0.2",
 		"node-fetch": "^2.6.1"
