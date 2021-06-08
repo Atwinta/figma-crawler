@@ -6,12 +6,12 @@ const path = require('path');
 const env = process.env;
 
 const headers = new fetch.Headers();
-const devToken = env.DEV_TOKEN;
+const devToken = env.FIGMA_DEV_TOKEN;
 const fileKey = process.argv[2];
 const tokensDir = process.argv[3] ? process.argv[3] : 'tokens';
 
 if (!devToken) {
-  console.log('set DEV_TOKEN in .env');
+  console.log('set FIGMA_DEV_TOKEN in .env');
   process.exit(0);
 }
 
@@ -20,9 +20,12 @@ if (!fileKey) {
 	process.exit(0);
 }
 
-const platforms = {
-	design: env.DESIGN_PLATFORMS ? env.DESIGN_PLATFORMS.split(',') : [],
-	themekit: env.THEMEKIT_PLATFORMS ? env.THEMEKIT_PLATFORMS.split(',') : []
+// mapper design platform names : themekit platform names
+const platformsMapper = {
+	common: 'common',
+	phone: 'touch-phone',
+	tablet: 'touch-pad',
+	desktop: 'desktop'
 };
 
 const tokens = {
@@ -65,10 +68,10 @@ async function main() {
 			const basePath = path.join(dirPath, component);
 
 			if (component === 'text') {
-				for (const platform of platforms.design) {
-					const i = platforms.design.indexOf(platform);
-					const file = `${basePath}@${platforms.themekit[i]}.${tokens.type}`;
-					const json = data[component][platform];
+				for (const design in platformsMapper) {
+					const themekit = platformsMapper[design];
+					const file = `${basePath}@${themekit}.${tokens.type}`;
+					const json = data[component][design];
 
 					json && fs.writeFile(file, JSON.stringify({ [component]: json }), (err) => {
 						if (err) console.log(err);
