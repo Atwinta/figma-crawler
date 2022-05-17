@@ -7,8 +7,14 @@ const env = process.env;
 
 const headers = new fetch.Headers();
 const devToken = env.FIGMA_DEV_TOKEN;
+const configPath = path.join(process.cwd(), 'figmacrawler.config.js');
 const fileKey = process.argv[2];
 const tokensDir = process.argv[3] ? process.argv[3] : 'tokens';
+
+if (!fs.existsSync(configPath)) {
+	console.warn('Config not found:', configPath);
+	process.exit(0);
+}
 
 if (!devToken) {
   console.log('set FIGMA_DEV_TOKEN in .env');
@@ -20,13 +26,8 @@ if (!fileKey) {
 	process.exit(0);
 }
 
-// mapper design platform names : themekit platform names
-const platformsMapper = {
-	common: 'common',
-	phone: 'touch-phone',
-	tablet: 'touch-pad',
-	desktop: 'desktop'
-};
+const config = require(configPath);
+const platforms = config.platforms;
 
 const tokens = {
 	type: 'tokens.json',
@@ -68,17 +69,16 @@ async function main() {
 			const basePath = path.join(dirPath, component);
 
 			if (component === 'text') {
-				for (const design in platformsMapper) {
-					const themekit = platformsMapper[design];
-					const file = `${basePath}@${themekit}.${tokens.type}`;
-					const json = data[component][design];
+				platforms.forEach(platform => {
+					const file = `${basePath}@${platform}.${tokens.type}`;
+					const json = data[component][platform];
 
 					json && fs.writeFile(file, JSON.stringify({ [component]: json }), (err) => {
-						if (err) console.log(err);
+						err && console.log(err);
 
 						console.log('> Token file written:', file);
 					});
-				}
+				});
 			} else {
 				const file = `${basePath}.${tokens.type}`;
 				const json = data[component];
