@@ -7,12 +7,12 @@ const env = process.env;
 
 const headers = new fetch.Headers();
 const devToken = env.FIGMA_DEV_TOKEN;
-const configPath = path.join(process.cwd(), 'figmacrawler.config.js');
+const tokensCfgPath = path.join(process.cwd(), 'tokens.config.js');
 const fileKey = process.argv[2];
 const tokensDir = process.argv[3] ? process.argv[3] : 'tokens';
 
-if (!fs.existsSync(configPath)) {
-	console.warn('Config not found:', configPath);
+if (!fs.existsSync(tokensCfgPath)) {
+	console.warn('Config not found:', tokensCfgPath);
 	process.exit(0);
 }
 
@@ -26,8 +26,8 @@ if (!fileKey) {
 	process.exit(0);
 }
 
-const config = require(configPath);
-const platforms = config.platforms;
+const tokensCfg = require(tokensCfgPath);
+const platformsMap = tokensCfg.platformsMap;
 
 const tokens = {
 	type: 'tokens.json',
@@ -69,16 +69,17 @@ async function main() {
 			const basePath = path.join(dirPath, component);
 
 			if (component === 'text') {
-				platforms.forEach(platform => {
-					const file = `${basePath}@${platform}.${tokens.type}`;
-					const json = data[component][platform];
+				for (const designPlatformName in platformsMap) {
+					const filePlatformName = platformsMap[designPlatformName];
+					const file = `${basePath}@${filePlatformName}.${tokens.type}`;
+					const json = data[component][designPlatformName];
 
 					json && fs.writeFile(file, JSON.stringify({ [component]: json }, null, 2), (err) => {
 						err && console.log(err);
 
 						console.log('> Token file written:', file);
 					});
-				});
+				}
 			} else {
 				const file = `${basePath}.${tokens.type}`;
 				const json = data[component];

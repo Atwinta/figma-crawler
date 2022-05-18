@@ -1,14 +1,15 @@
 const path = require('path');
 const fs = require('fs');
 const StyleDictionaryPackage = require('style-dictionary');
-const figmacrawlerConfigPath = path.join(process.cwd(), 'figmacrawler.config.js');
+const tokensCfgPath = path.join(process.cwd(), 'tokens.config.js');
 
-if (!fs.existsSync(figmacrawlerConfigPath)) {
-  console.warn('Figmacrawler config not found:', figmacrawlerConfigPath);
+if (!fs.existsSync(tokensCfgPath)) {
+  console.warn('Tokens config not found:', tokensCfgPath);
   process.exit(0);
 }
 
-const figmacrawlerConfig = require(figmacrawlerConfigPath);
+const tokensCfg = require(tokensCfgPath);
+const platformsMap = tokensCfg.platformsMap;
 
 function getStyleDictionaryConfig(platform) {
   const source = [
@@ -42,7 +43,8 @@ function getStyleDictionaryConfig(platform) {
 
 console.log('Build started...');
 
-figmacrawlerConfig.platforms.map(platform => {
+for (const designName in platformsMap) {
+  const platform = platformsMap[designName];
   console.log('\n==============================================');
   console.log(`\nProcessing: [${platform}]`);
 
@@ -51,7 +53,7 @@ figmacrawlerConfig.platforms.map(platform => {
   StyleDictionary.buildAllPlatforms();
 
   console.log('\nEnd processing');
-});
+}
 
 console.log('\n==============================================');
 console.log('\nBuild completed!');
