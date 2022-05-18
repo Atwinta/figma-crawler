@@ -1,83 +1,69 @@
 # Figma Crawler
 
-Based on [figma-to-web](https://github.com/Severenit/figma-to-web)
+Основано на [figma-to-web](https://github.com/Severenit/figma-to-web)
 
-## Use as dependecy in another project
+## Конфиг
 
-### Preinstallation
+Файл `tokens.config.js` используется при генерации токенов и генерации стилей.
 
-Set `@5th_ru` registry by [instruction](https://docs.gitlab.com/ee/user/packages/npm_registry/index.html#instance-level-npm-endpoint).
+Содержит объект `platformMap`, представляющий собой перечень уровней (платформ), для которых генерируются токены (и стили). Ключом является имя платформы в `Figma`, значением — имя платформы в сгенерируемых файлах (по-умолчанию, совпадают). При необходимости, можно менять как сам состав платформ в зависимости от дизайна, так и имя используемое в файлах.
 
-**TL;DR**
+## Использование
 
-Get [personal access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html): with scopes: `api`, `read_registry`.
+1. Создать токен в `Figma` [см. здесь](https://www.figma.com/developers/docs#authentication)
+2. В случае отсутсвия `.env` файла копируем его из шаблона `.env.example`:
+```sh
+cp ./.env.example ./.env
+```
+3. Добавить переменную `FIGMA_DEV_TOKEN` в файл `.env` со значением своего токена от `Figma`:
+```
+FIGMA_DEV_TOKEN=<YOUR_TOKEN>
+```
+### Предустановка
+
+[Настроить](https://g.5th.ru/5th_ru/tips-tricks-and-docs/-/blob/master/nodejs/@5th_ru.md) `@5th_ru` npm package registry
+
+### Установка
 
 ```sh
-npm config set @5th_ru:registry https://gitlab.com/api/v4/packages/npm/
-npm config set -- '//gitlab.com/api/v4/packages/npm/:_authToken' "<your_token>"
+npm i -D @5th_ru/figma-crawler
 ```
 
-### Installation
+### Генерация токенов
 
+1. Копируем себе в проект конфиг `tokens.config.js`, и при необходимости меняем уровни (платформы)
 ```sh
-npm i @5th_ru/figma-crawler
+cp ./node_modules/@5th_ru/figma-crawler/tokens.config.js ./
 ```
-
-### Generate tokens in json
-
-You can get file_key from URL: `https://www.figma.com/file/<file_key>`
-
-Optional argument `$dir`. Default `tokens`
-
+2. Запускаем команду для получения построения токенов, указав `<file_key>` (id проекта) и путь для выгрузки (опционально, дефолтное значение: `./tokens`):
 ```sh
-node node_modules/@5th_ru/figma-crawler/main.js ${file_key} $dir
+node node_modules/@5th_ru/figma-crawler/main.js $file_key $path
 ```
 
-When the tokens are ready you will be able to create css variables by [themekit](https://github.com/bem/themekit).
+Id проекта (`file_key`) можно получить из урла: `https://www.figma.com/file/<file_key>`
 
-## Use in this repository
+### Генерация `css` файлов с переменными из токенов
 
-### Preparation
+Генерация производится с помощью [Style Dictionary](https://amzn.github.io/style-dictionary)
 
-Copy `.env.example` to `.env`
-
+1. Устанавливаем в проект `Style Dictionary`:
 ```sh
-cp .env.example .env
+npm i -D style-dictionary
 ```
 
-Then change `<YOUR_TOKEN>` in `.env` file to your personal Figma access token key.
-
-Token key you can take in [this](https://www.figma.com/developers/docs#authentication).
-
-You can create a temporary access token by clicking right there on `Get personal access token` or read how to make permanent access token.
-
-### Installation
-
+2. Копируем себе в проект пример конфиг билда
 ```sh
-npm i
+cp ./node_modules/@5th_ru/figma-crawler/build.style-dictionary.js ./
 ```
 
-### Run
+3. Меняем в конфиге пути до токенов и генерируемых файлов, а также при необходимости и с полным пониманием происходящего другие параметры.
 
-This work with special preparation figma file.
-
-#### Generate tokens in json
-
-You can get file_key from URL: `https://www.figma.com/file/<file_key>`
-
-Optional argument `$dir`. Default `tokens`
-
+4. Запускаем:
 ```sh
-node main.js ${file_key} $dir
+node ./build.style-dictionary.js
 ```
 
-#### Build css variables by [themekit](https://github.com/bem/themekit)
-
-```sh
-npx themekit build
-```
-
-## Related links
+## Полезные ссылки
 - [Figma API](https://www.figma.com/developers/api)
 - [Design tokens with Figma](https://blog.prototypr.io/design-tokens-with-figma-aef25c42430f#3207)
 - [Introducing: Figma to React](https://www.figma.com/blog/introducing-figma-to-react/)
@@ -87,3 +73,5 @@ npx themekit build
 - [Figma to React: система эффективной доставки изменений дизайна в код (HolyJs)](https://www.youtube.com/watch?v=A3CamtT9VBs&list=PL8sJahqnzh8KXjvw3i0bY-fCn1abQMbv8&index=20&t=0s)
 - [Figma to React: система эффективной доставки изменений дизайна в код (IT Nights)](https://www.youtube.com/watch?v=VIyd2YOUOhI&feature=youtu.be&fbclid=IwAR1EjKDrRsltbxfI8moSn3wr7pJtvDA7JRvUEAiakwI-Z1YRiap4IbmDsfk)
 - [Figma-SCSS-Generator](https://github.com/KarlRombauts/Figma-SCSS-Generator)
+- [Style Dictionary](https://amzn.github.io/style-dictionary)
+- [themekit](https://github.com/bem/themekit)
