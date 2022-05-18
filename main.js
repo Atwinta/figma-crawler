@@ -73,7 +73,7 @@ async function main() {
 					const file = `${basePath}@${platform}.${tokens.type}`;
 					const json = data[component][platform];
 
-					json && fs.writeFile(file, JSON.stringify({ [component]: json }), (err) => {
+					json && fs.writeFile(file, JSON.stringify({ [component]: json }, null, 2), (err) => {
 						err && console.log(err);
 
 						console.log('> Token file written:', file);
@@ -83,7 +83,7 @@ async function main() {
 				const file = `${basePath}.${tokens.type}`;
 				const json = data[component];
 
-				json && fs.writeFile(file, JSON.stringify({ [component]: json }), (err) => {
+				json && fs.writeFile(file, JSON.stringify({ [component]: json }, null, 2), (err) => {
 					if (err) console.log(err);
 
 					console.log('> Token file written:', file);
