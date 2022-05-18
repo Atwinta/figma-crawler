@@ -7,6 +7,10 @@
 		"type": "git",
 		"url": "git+ssh://git@gitlab.com/5th_ru/figma-crawler.git"
 	},
+	"scripts": {
+		"tokens:get": "node ./main.js vuTgbOSDxzY6pryHtZavBU",
+    "tokens:build": "node build.style-dictionary.js"
+	},
 	"dependencies": {
 		"dotenv": "^9.0.2",
 		"node-fetch": "^2.6.1"
