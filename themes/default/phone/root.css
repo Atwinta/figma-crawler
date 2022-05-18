@@ -1,21 +1,9 @@
 /**
  * Do not edit directly
- * Generated on Wed, 18 May 2022 07:34:29 GMT
+ * this file generated from tokens
  */
 
 .theme_root_default {
-  --typography-body-font-family: 'Source Sans Pro', sans-serif;
-  --typography-headline-font-family: 'Source Sans Pro', sans-serif;
-  --typography-controls-font-family: 'Source Sans Pro', sans-serif;
-  --text-caption-xl-font-size: 14px;
-  --text-caption-xl-line-height: 1.21;
-  --text-caption-xl-letter-spacing: normal;
-  --text-caption-l-font-size: 13px;
-  --text-caption-l-line-height: 1.23;
-  --text-caption-l-letter-spacing: normal;
-  --text-caption-m-font-size: 12px;
-  --text-caption-m-line-height: 1.25;
-  --text-caption-m-letter-spacing: normal;
   --text-display-xl-font-size: 42px;
   --text-display-xl-line-height: 1.19;
   --text-display-xl-letter-spacing: normal;

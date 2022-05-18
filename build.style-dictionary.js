@@ -11,14 +11,14 @@ if (!fs.existsSync(figmacrawlerConfigPath)) {
 const figmacrawlerConfig = require(figmacrawlerConfigPath);
 
 function getStyleDictionaryConfig(platform) {
+  const source = [
+    `./tokens/components/*@${platform}.tokens.json`
+  ];
+
+  platform === 'common' && source.unshift("./tokens/typography.tokens.json");
+
   return {
-    "include": [
-      "./tokens/typography.tokens.json",
-      "./tokens/components/*@common.tokens.json"
-    ],
-    "source": [
-      `./tokens/components/*@${platform}.tokens.json`
-    ],
+    "source": source,
     "platforms": {
       "css": {
         "transformGroup": "web",
@@ -27,6 +27,10 @@ function getStyleDictionaryConfig(platform) {
           "destination": "root.css",
           "format": "css/variables",
           "options": {
+            "fileHeader": () => [
+              "Do not edit directly",
+              "this file generated from tokens"
+            ],
             "selector": ".theme_root_default",
             "useAliasVariables": true
           }
