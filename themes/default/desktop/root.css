@@ -1,0 +1,76 @@
+/**
+ * Do not edit directly
+ * Generated on Wed, 18 May 2022 06:44:40 GMT
+ */
+
+.theme_root_default {
+  --typography-body-font-family: 'Source Sans Pro', sans-serif;
+  --typography-headline-font-family: 'Source Sans Pro', sans-serif;
+  --typography-controls-font-family: 'Source Sans Pro', sans-serif;
+  --text-display-xl-font-size: 64px;
+  --text-display-xl-line-height: 1.13;
+  --text-display-xl-letter-spacing: normal;
+  --text-headline-xxl-font-size: 64px;
+  --text-headline-xxl-line-height: 1.13;
+  --text-headline-xxl-letter-spacing: normal;
+  --text-headline-xl-font-size: 56px;
+  --text-headline-xl-line-height: 1.14;
+  --text-headline-xl-letter-spacing: normal;
+  --text-headline-l-font-size: 44px;
+  --text-headline-l-line-height: 1.18;
+  --text-headline-l-letter-spacing: normal;
+  --text-headline-m-font-size: 36px;
+  --text-headline-m-line-height: 1.22;
+  --text-headline-m-letter-spacing: normal;
+  --text-headline-s-font-size: 24px;
+  --text-headline-s-line-height: 1.33;
+  --text-headline-s-letter-spacing: normal;
+  --text-headline-xs-font-size: 18px;
+  --text-headline-xs-line-height: 1.44;
+  --text-headline-xs-letter-spacing: normal;
+  --text-subheader-xl-font-size: 36px;
+  --text-subheader-xl-line-height: 1.11;
+  --text-subheader-xl-letter-spacing: normal;
+  --text-subheader-l-font-size: 32px;
+  --text-subheader-l-line-height: 1.13;
+  --text-subheader-l-letter-spacing: normal;
+  --text-subheader-m-font-size: 28px;
+  --text-subheader-m-line-height: 1.14;
+  --text-subheader-m-letter-spacing: normal;
+  --text-subheader-s-font-size: 26px;
+  --text-subheader-s-line-height: 1.15;
+  --text-subheader-s-letter-spacing: normal;
+  --text-body-long-xl-font-size: 24px;
+  --text-body-long-xl-line-height: 1.33;
+  --text-body-long-xl-letter-spacing: normal;
+  --text-body-long-l-font-size: 20px;
+  --text-body-long-l-line-height: 1.40;
+  --text-body-long-l-letter-spacing: normal;
+  --text-body-long-m-font-size: 18px;
+  --text-body-long-m-line-height: 1.44;
+  --text-body-long-m-letter-spacing: normal;
+  --text-body-long-s-font-size: 16px;
+  --text-body-long-s-line-height: 1.38;
+  --text-body-long-s-letter-spacing: normal;
+  --text-body-short-xl-font-size: 24px;
+  --text-body-short-xl-line-height: 1.17;
+  --text-body-short-xl-letter-spacing: normal;
+  --text-body-short-l-font-size: 20px;
+  --text-body-short-l-line-height: 1.20;
+  --text-body-short-l-letter-spacing: normal;
+  --text-body-short-m-font-size: 18px;
+  --text-body-short-m-line-height: 1.22;
+  --text-body-short-m-letter-spacing: normal;
+  --text-body-short-s-font-size: 16px;
+  --text-body-short-s-line-height: 1.25;
+  --text-body-short-s-letter-spacing: normal;
+  --text-control-l-font-size: 18px;
+  --text-control-l-line-height: 1.22;
+  --text-control-l-letter-spacing: normal;
+  --text-control-m-font-size: 16px;
+  --text-control-m-line-height: 1.25;
+  --text-control-m-letter-spacing: normal;
+  --text-control-s-font-size: 14px;
+  --text-control-s-line-height: 1.29;
+  --text-control-s-letter-spacing: normal;
+}

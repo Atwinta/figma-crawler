@@ -1,0 +1,312 @@
+{
+  "text": {
+    "display-xl": {
+      "fontSize": {
+        "value": "52px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.15",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "headline-xxl": {
+      "fontSize": {
+        "value": "52px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.15",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "headline-xl": {
+      "fontSize": {
+        "value": "48px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.17",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "headline-l": {
+      "fontSize": {
+        "value": "42px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.19",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "headline-m": {
+      "fontSize": {
+        "value": "36px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.22",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "headline-s": {
+      "fontSize": {
+        "value": "24px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.33",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "headline-xs": {
+      "fontSize": {
+        "value": "18px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.44",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "subheader-xl": {
+      "fontSize": {
+        "value": "32px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.13",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "subheader-l": {
+      "fontSize": {
+        "value": "28px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.14",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "subheader-m": {
+      "fontSize": {
+        "value": "24px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.17",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "subheader-s": {
+      "fontSize": {
+        "value": "20px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.20",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-long-xl": {
+      "fontSize": {
+        "value": "22px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.36",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-long-l": {
+      "fontSize": {
+        "value": "18px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.44",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-long-m": {
+      "fontSize": {
+        "value": "16px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.38",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-long-s": {
+      "fontSize": {
+        "value": "14px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.57",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-short-xl": {
+      "fontSize": {
+        "value": "22px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.18",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-short-l": {
+      "fontSize": {
+        "value": "18px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.22",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-short-m": {
+      "fontSize": {
+        "value": "16px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.25",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-short-s": {
+      "fontSize": {
+        "value": "14px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.29",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "control-l": {
+      "fontSize": {
+        "value": "16px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.25",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "control-m": {
+      "fontSize": {
+        "value": "14px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.29",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "control-s": {
+      "fontSize": {
+        "value": "12px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.33",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    }
+  }
+}
