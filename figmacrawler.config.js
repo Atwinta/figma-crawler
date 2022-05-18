@@ -1,5 +1,6 @@
 module.exports = {
   platforms: [
+		'common',
 		'phone',
 		'tablet',
 		'desktop',

@@ -1,0 +1,46 @@
+{
+  "text": {
+    "caption-xl": {
+      "fontSize": {
+        "value": "14px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.21",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "caption-l": {
+      "fontSize": {
+        "value": "13px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.23",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "caption-m": {
+      "fontSize": {
+        "value": "12px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.25",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    }
+  }
+}
