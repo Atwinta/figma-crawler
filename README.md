@@ -53,14 +53,14 @@ npm i -D style-dictionary
 
 2. Копируем себе в проект пример конфиг билда
 ```sh
-cp ./node_modules/@5th_ru/figma-crawler/build.style-dictionary.js ./
+cp ./node_modules/@5th_ru/figma-crawler/style-dictionary.config.js ./
 ```
 
 3. Меняем в конфиге пути до токенов и генерируемых файлов, а также при необходимости и с полным пониманием происходящего другие параметры.
 
 4. Запускаем:
 ```sh
-node ./build.style-dictionary.js
+node ./style-dictionary.config.js
 ```
 
 ## Полезные ссылки

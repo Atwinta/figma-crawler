@@ -9,7 +9,7 @@
 	},
 	"scripts": {
 		"tokens:get": "node ./main.js vuTgbOSDxzY6pryHtZavBU",
-    "tokens:build": "node build.style-dictionary.js"
+    "tokens:build": "node ./style-dictionary.config.js"
 	},
 	"dependencies": {
 		"dotenv": "^9.0.2",
