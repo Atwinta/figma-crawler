@@ -32,8 +32,7 @@ function getStyleDictionaryConfig(platform) {
               "Do not edit directly",
               "this file generated from tokens"
             ],
-            "selector": ".theme_root_default",
-            "useAliasVariables": true
+            "selector": ".theme_root_default"
           }
         }]
       }
