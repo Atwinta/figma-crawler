@@ -119,69 +119,69 @@
         },
         "fillColor": {
           "base": {
-            "value": "{color.control.default.fill.base.value}",
+            "value": "{color.control.view.default.fill.base.value}",
             "group": "color"
           },
-          "disable": {
-            "value": "{color.control.default.fill.disable.value}",
+          "disabled": {
+            "value": "{color.control.view.default.fill.disabled.value}",
             "group": "color"
           },
-          "hover": {
-            "value": "{color.control.default.fill.hover.value}",
+          "hovered": {
+            "value": "{color.control.view.default.fill.hovered.value}",
             "group": "color"
           },
-          "press": {
-            "value": "{color.control.default.fill.press.value}",
+          "pressed": {
+            "value": "{color.control.view.default.fill.pressed.value}",
             "group": "color"
           }
         },
-        "textColor": {
+        "typoColor": {
           "base": {
-            "value": "{color.control.default.text.base.value}",
+            "value": "{color.control.view.default.typo.base.value}",
             "group": "color"
           },
-          "disable": {
-            "value": "{color.control.default.text.disable.value}",
+          "disabled": {
+            "value": "{color.control.view.default.typo.disabled.value}",
             "group": "color"
           },
-          "hover": {
-            "value": "{color.control.default.text.hover.value}",
+          "hovered": {
+            "value": "{color.control.view.default.typo.hovered.value}",
             "group": "color"
           },
-          "press": {
-            "value": "{color.control.default.text.press.value}",
+          "pressed": {
+            "value": "{color.control.view.default.typo.pressed.value}",
             "group": "color"
           },
-          "focus": {
-            "value": "{color.control.default.text.focus.value}",
+          "focused": {
+            "value": "{color.control.view.default.typo.focused.value}",
             "group": "color"
           }
         },
         "borderColor": {
           "base": {
-            "value": "{color.control.default.border.base.value}",
+            "value": "{color.control.view.default.border.base.value}",
             "group": "color"
           },
-          "disable": {
-            "value": "{color.control.default.border.disable.value}",
+          "disabled": {
+            "value": "{color.control.view.default.border.disabled.value}",
             "group": "color"
           },
-          "focus": {
-            "value": "{color.control.default.border.focus.value}",
+          "focused": {
+            "value": "{color.control.view.default.border.focused.value}",
             "group": "color"
           },
-          "hover": {
-            "value": "{color.control.default.border.hover.value}",
+          "hovered": {
+            "value": "{color.control.view.default.border.hovered.value}",
             "group": "color"
           },
-          "press": {
-            "value": "{color.control.default.border.press.value}",
+          "pressed": {
+            "value": "{color.control.view.default.border.pressed.value}",
             "group": "color"
           }
         },
         "boxShadow": {
-          "focus": {
-            "value": "{effect.shadow.control.default.focus.value}",
+          "focused": {
+            "value": "{effect.shadow.control.view.default.focused.value}",
             "group": "effect"
           }
         }
@@ -203,65 +203,65 @@
         },
         "fillColor": {
           "base": {
-            "value": "{color.control.action.fill.base.value}",
+            "value": "{color.control.view.action.fill.base.value}",
             "group": "color"
           },
-          "disable": {
-            "value": "{color.control.action.fill.disable.value}",
+          "disabled": {
+            "value": "{color.control.view.action.fill.disabled.value}",
             "group": "color"
           },
-          "hover": {
-            "value": "{color.control.action.fill.hover.value}",
+          "hovered": {
+            "value": "{color.control.view.action.fill.hovered.value}",
             "group": "color"
           },
-          "press": {
-            "value": "{color.control.action.fill.press.value}",
+          "pressed": {
+            "value": "{color.control.view.action.fill.pressed.value}",
             "group": "color"
           }
         },
-        "textColor": {
+        "typoColor": {
           "base": {
-            "value": "{color.control.action.text.base.value}",
+            "value": "{color.control.view.action.typo.base.value}",
             "group": "color"
           },
-          "disable": {
-            "value": "{color.control.action.text.disable.value}",
+          "disabled": {
+            "value": "{color.control.view.action.typo.disabled.value}",
             "group": "color"
           },
-          "hover": {
-            "value": "{color.control.action.text.hover.value}",
+          "hovered": {
+            "value": "{color.control.view.action.typo.hovered.value}",
             "group": "color"
           },
-          "press": {
-            "value": "{color.control.action.text.press.value}",
+          "pressed": {
+            "value": "{color.control.view.action.typo.pressed.value}",
             "group": "color"
           },
-          "focus": {
-            "value": "{color.control.action.text.focus.value}",
+          "focused": {
+            "value": "{color.control.view.action.typo.focused.value}",
             "group": "color"
           }
         },
         "borderColor": {
           "base": {
-            "value": "{color.control.action.border.base.value}",
+            "value": "{color.control.view.action.border.base.value}",
             "group": "color"
           },
-          "disable": {
-            "value": "{color.control.action.border.disable.value}",
+          "disabled": {
+            "value": "{color.control.view.action.border.disabled.value}",
             "group": "color"
           },
-          "hover": {
-            "value": "{color.control.action.border.hover.value}",
+          "hovered": {
+            "value": "{color.control.view.action.border.hovered.value}",
             "group": "color"
           },
-          "press": {
-            "value": "{color.control.action.border.press.value}",
+          "pressed": {
+            "value": "{color.control.view.action.border.pressed.value}",
             "group": "color"
           }
         },
         "boxShadow": {
-          "focus": {
-            "value": "{effect.shadow.control.action.focus.value}",
+          "focused": {
+            "value": "{effect.shadow.control.view.action.focused.value}",
             "group": "effect"
           }
         }

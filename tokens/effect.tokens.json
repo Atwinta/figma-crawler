@@ -2,16 +2,18 @@
   "effect": {
     "shadow": {
       "control": {
-        "default": {
-          "focus": {
-            "value": "0px 0px 0px 1px color(#751222 a(80%))",
-            "group": "effect"
-          }
-        },
-        "action": {
-          "focus": {
-            "value": "0px 0px 0px 1px color(#a80a24 a(70%))",
-            "group": "effect"
+        "view": {
+          "default": {
+            "focused": {
+              "value": "0px 0px 0px 1px color(#751222 a(80%))",
+              "group": "effect"
+            }
+          },
+          "action": {
+            "focused": {
+              "value": "0px 0px 0px 1px color(#a80a24 a(70%))",
+              "group": "effect"
+            }
           }
         }
       }
