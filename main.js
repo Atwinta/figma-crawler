@@ -28,15 +28,19 @@ if (!fileKey) {
 
 const tokensCfg = require(tokensCfgPath);
 const platformsMap = tokensCfg.platformsMap;
+const colorFormat = tokensCfg.colorFormat || 'css';
 
 const tokens = {
 	type: 'tokens.json',
 	baseDir: tokensDir,
 	base: [
-		'typography'
+		'typography',
+		'color',
+		'effect'
 	],
 	components: [
-		'text'
+		'text',
+		'button'
 	]
 };
 
@@ -54,7 +58,7 @@ let query = {
 async function main() {
 	console.log(`> Build tokens of file ${fileKey}. Go get a cup of coffee...`);
 
-	const data = await getStylesArtboard(fileKey, query.url);
+	const data = await getStylesArtboard(fileKey, query.url, colorFormat);
 
 	const baseDir = path.join(process.cwd(), tokens.baseDir);
 

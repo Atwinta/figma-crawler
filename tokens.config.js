@@ -5,5 +5,6 @@ module.exports = {
 		'tablet': 'tablet',
 		'desktop': 'desktop',
 		'desktop-large': 'desktop-large'
-	}
+	},
+	colorFormat: 'postcss' // <postcss|css>
 };

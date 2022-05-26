@@ -1,3 +1,4 @@
+const lodash = require('lodash');
 const path = require('path');
 const fs = require('fs');
 const StyleDictionaryPackage = require('style-dictionary');
@@ -10,32 +11,56 @@ if (!fs.existsSync(tokensCfgPath)) {
 
 const tokensCfg = require(tokensCfgPath);
 const platformsMap = tokensCfg.platformsMap;
+const colorGroup = ['color', 'effect'];
+const cssParams = {
+  transforms: ['attribute/cti', 'name/cti/kebab'],
+  files: [{
+    format: "css/variables",
+    options: {
+      fileHeader: () => [
+        "Do not edit directly",
+        "this file generated from tokens"
+      ],
+      outputReferences: true
+    }
+  }]
+};
 
 function getStyleDictionaryConfig(platform) {
-  const source = [
-    `./tokens/components/*@${platform}.tokens.json`
-  ];
+  const buildPath = `./themes/default/${platform}/`;
 
-  platform === 'common' && source.unshift("./tokens/typography.tokens.json");
+  const source = platform === 'common' ? [
+    `./tokens/**/!(*@${Object.values(platformsMap).join('|*@')}).tokens.json`
+  ] : [];
+
+  source.push(`./tokens/**/*@${platform}.tokens.json`);
 
   return {
-    "source": source,
-    "platforms": {
-      "css": {
-        "transformGroup": "web",
-        "buildPath": `./themes/default/${platform}/`,
-        "files": [{
-          "destination": "root.css",
-          "format": "css/variables",
-          "options": {
-            "fileHeader": () => [
-              "Do not edit directly",
-              "this file generated from tokens"
-            ],
-            "selector": ".theme_root_default"
+    source: source,
+    platforms: {
+      "css": lodash.merge({ buildPath }, cssParams, {
+        files: [{
+          destination: "root.css",
+          options: {
+            selector: ".theme_root_default"
+          },
+          filter: token => {
+            return colorGroup.indexOf(token.group) < 0;
           }
         }]
-      }
+      }),
+
+      "css/color": lodash.merge({ buildPath }, cssParams, {
+        files: [{
+          destination: "color.css",
+          options: {
+            selector: ".theme_color_default"
+          },
+          filter: token => {
+            return ~colorGroup.indexOf(token.group);
+          }
+        }]
+      })
     }
   };
 }

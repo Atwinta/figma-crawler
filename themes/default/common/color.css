@@ -1,0 +1,65 @@
+/**
+ * Do not edit directly
+ * this file generated from tokens
+ */
+
+.theme_color_default {
+  --effect-shadow-control-action-focus: 0px 0px 0px 1px color(#a80a24 a(70%));
+  --effect-shadow-control-default-focus: 0px 0px 0px 1px color(#751222 a(80%));
+  --color-control-action-border-press: color(#ffffff a(0%));
+  --color-control-action-border-hover: color(#ffffff a(0%));
+  --color-control-action-border-disable: color(#ffffff a(0%));
+  --color-control-action-border-base: color(#ffffff a(0%));
+  --color-control-action-text-focus: #ffffff;
+  --color-control-action-text-press: #ffffff;
+  --color-control-action-text-hover: #ffffff;
+  --color-control-action-text-disable: #9a9a9a;
+  --color-control-action-text-base: #ffffff;
+  --color-control-action-fill-press: #610d1a;
+  --color-control-action-fill-hover: #97162b;
+  --color-control-action-fill-disable: #d6d6d6;
+  --color-control-action-fill-base: #751222;
+  --color-control-default-border-press: #aeaeae;
+  --color-control-default-border-hover: #aeaeae;
+  --color-control-default-border-focus: #cccccc;
+  --color-control-default-border-disable: #cccccc;
+  --color-control-default-border-base: #cccccc;
+  --color-control-default-text-focus: #000000;
+  --color-control-default-text-press: #000000;
+  --color-control-default-text-hover: #000000;
+  --color-control-default-text-disable: #999999;
+  --color-control-default-text-base: #000000;
+  --color-control-default-fill-press: #f8f6f6;
+  --color-control-default-fill-hover: #ffffff;
+  --color-control-default-fill-disable: #ececec;
+  --color-control-default-fill-base: #ffffff;
+  --button-view-action-box-shadow-focus: var(--effect-shadow-control-action-focus);
+  --button-view-action-border-color-press: var(--color-control-action-border-press);
+  --button-view-action-border-color-hover: var(--color-control-action-border-hover);
+  --button-view-action-border-color-disable: var(--color-control-action-border-disable);
+  --button-view-action-border-color-base: var(--color-control-action-border-base);
+  --button-view-action-text-color-focus: var(--color-control-action-text-focus);
+  --button-view-action-text-color-press: var(--color-control-action-text-press);
+  --button-view-action-text-color-hover: var(--color-control-action-text-hover);
+  --button-view-action-text-color-disable: var(--color-control-action-text-disable);
+  --button-view-action-text-color-base: var(--color-control-action-text-base);
+  --button-view-action-fill-color-press: var(--color-control-action-fill-press);
+  --button-view-action-fill-color-hover: var(--color-control-action-fill-hover);
+  --button-view-action-fill-color-disable: var(--color-control-action-fill-disable);
+  --button-view-action-fill-color-base: var(--color-control-action-fill-base);
+  --button-view-default-box-shadow-focus: var(--effect-shadow-control-default-focus);
+  --button-view-default-border-color-press: var(--color-control-default-border-press);
+  --button-view-default-border-color-hover: var(--color-control-default-border-hover);
+  --button-view-default-border-color-focus: var(--color-control-default-border-focus);
+  --button-view-default-border-color-disable: var(--color-control-default-border-disable);
+  --button-view-default-border-color-base: var(--color-control-default-border-base);
+  --button-view-default-text-color-focus: var(--color-control-default-text-focus);
+  --button-view-default-text-color-press: var(--color-control-default-text-press);
+  --button-view-default-text-color-hover: var(--color-control-default-text-hover);
+  --button-view-default-text-color-disable: var(--color-control-default-text-disable);
+  --button-view-default-text-color-base: var(--color-control-default-text-base);
+  --button-view-default-fill-color-press: var(--color-control-default-fill-press);
+  --button-view-default-fill-color-hover: var(--color-control-default-fill-hover);
+  --button-view-default-fill-color-disable: var(--color-control-default-fill-disable);
+  --button-view-default-fill-color-base: var(--color-control-default-fill-base);
+}

@@ -13,6 +13,7 @@
 	},
 	"dependencies": {
 		"dotenv": "^9.0.2",
+		"lodash": "^4.17.21",
 		"node-fetch": "^2.6.1"
 	},
 	"publishConfig": {

@@ -4,16 +4,43 @@
  */
 
 .theme_root_default {
-  --typography-body-font-family: 'Source Sans Pro', sans-serif;
-  --typography-headline-font-family: 'Source Sans Pro', sans-serif;
-  --typography-controls-font-family: 'Source Sans Pro', sans-serif;
-  --text-caption-xl-font-size: 14px;
-  --text-caption-xl-line-height: 1.21;
-  --text-caption-xl-letter-spacing: normal;
-  --text-caption-l-font-size: 13px;
-  --text-caption-l-line-height: 1.23;
-  --text-caption-l-letter-spacing: normal;
-  --text-caption-m-font-size: 12px;
-  --text-caption-m-line-height: 1.25;
   --text-caption-m-letter-spacing: normal;
+  --text-caption-m-line-height: 1.25;
+  --text-caption-m-font-size: 12px;
+  --text-caption-l-letter-spacing: normal;
+  --text-caption-l-line-height: 1.23;
+  --text-caption-l-font-size: 13px;
+  --text-caption-xl-letter-spacing: normal;
+  --text-caption-xl-line-height: 1.21;
+  --text-caption-xl-font-size: 14px;
+  --typography-controls-font-family: 'Source Sans Pro', sans-serif;
+  --typography-headline-font-family: 'Source Sans Pro', sans-serif;
+  --typography-body-font-family: 'Source Sans Pro', sans-serif;
+  --button-view-action-size-s-border-width: 0;
+  --button-view-action-size-m-border-width: 0;
+  --button-view-default-size-s-border-width: 1px;
+  --button-view-default-size-m-border-width: 1px;
+  --button-size-s-icon-height: 8px;
+  --button-size-s-icon-width: 8px;
+  --button-size-s-padding-right: 8px;
+  --button-size-s-padding-left: 8px;
+  --button-size-s-padding-bottom: 4px;
+  --button-size-s-padding-top: 4px;
+  --button-size-s-line-height: 1.29;
+  --button-size-s-font-weight: 400;
+  --button-size-s-font-size: 14px;
+  --button-size-s-gap: 4px;
+  --button-size-s-border-radius: 4px;
+  --button-size-m-icon-height: 10px;
+  --button-size-m-icon-width: 10px;
+  --button-size-m-padding-right: 12px;
+  --button-size-m-padding-left: 12px;
+  --button-size-m-padding-bottom: 6px;
+  --button-size-m-padding-top: 6px;
+  --button-size-m-line-height: 1.25;
+  --button-size-m-font-weight: 400;
+  --button-size-m-font-size: 16px;
+  --button-size-m-gap: 5px;
+  --button-size-m-border-radius: 4px;
+  --button-font-family: var(--typography-controls-font-family);
 }
