@@ -12,15 +12,15 @@
 		"tokens:build": "node ./style-dictionary.config.js"
 	},
 	"dependencies": {
-		"dotenv": "^9.0.2",
-		"lodash": "^4.17.21",
-		"node-fetch": "^2.6.1"
+		"dotenv": "9.0.2",
+		"lodash": "4.17.21",
+		"node-fetch": "2.6.1"
 	},
 	"publishConfig": {
 		"access": "restricted",
 		"@5th_ru:registry": "https://g.5th.ru/api/v4/projects/56/packages/npm/"
 	},
 	"peerDependencies": {
-		"style-dictionary": "^3.7.0"
+		"style-dictionary": "3.7.0"
 	}
 }
