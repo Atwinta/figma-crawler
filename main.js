@@ -1,52 +1,28 @@
-require('dotenv').config();
-
 const fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
+const params = require('./lib/params');
+const loadConfig = require('./lib/config');
 const writeToken = require('./lib/write-token');
-const env = process.env;
-
 const headers = new fetch.Headers();
-const devToken = env.FIGMA_DEV_TOKEN;
-const tokensCfgPath = path.join(process.cwd(), 'tokens.config.js');
-const fileKey = process.argv[2];
-const tokensDir = process.argv[3] ? process.argv[3] : 'tokens';
+const fileKey = params.fileKey;
 const tokensExt = 'tokens.json';
-
-if (!fs.existsSync(tokensCfgPath)) {
-	console.warn('Config not found:', tokensCfgPath);
-	process.exit(0);
-}
-
-if (!devToken) {
-  console.log('set FIGMA_DEV_TOKEN in .env');
-  process.exit(0);
-}
-
-if (!fileKey) {
-	console.log('Usage: node main.js <file-key>');
-	process.exit(0);
-}
-
-const tokensCfg = require(tokensCfgPath);
-const colorFormat = tokensCfg.colorFormat || 'css';
-
+const config = loadConfig(params.config);
 const getStylesArtboard = require('./lib/get-styles-artboard.js');
-
-headers.append('X-Figma-Token', devToken);
-
-let query = {
+const query = {
 	url: {
 		host: 'api.figma.com',
 		protocol: 'https',
 	}
 };
 
-async function main() {
-	console.log(`> Build tokens of file ${fileKey}. Go get a cup of coffee...`);
+headers.append('X-Figma-Token', params.figmaDevToken);
 
-	const data = await getStylesArtboard(fileKey, query.url, colorFormat);
-	const dist = path.join(process.cwd(), tokensDir);
+async function main() {
+	console.log(`\n> Build tokens of file ${fileKey}. Go get a cup of coffee...`);
+
+	const data = await getStylesArtboard(fileKey, query.url, config, headers);
+	const dist = params.output;
 
 	fs.existsSync(dist) && fs.rmdirSync(dist, { recursive: true });
 

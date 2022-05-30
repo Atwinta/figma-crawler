@@ -8,12 +8,13 @@
 		"url": "git+ssh://git@g.5th.ru/5th_ru/figma-crawler.git"
 	},
 	"scripts": {
-		"tokens:get": "node ./main.js vuTgbOSDxzY6pryHtZavBU",
+		"tokens:get": "node ./main.js -i vuTgbOSDxzY6pryHtZavBU -o tokens -c tokens.config.js",
 		"tokens:build": "node ./style-dictionary.config.js"
 	},
 	"dependencies": {
 		"dotenv": "9.0.2",
 		"lodash": "4.17.21",
+		"minimist": "1.2.6",
 		"node-fetch": "2.6.1"
 	},
 	"publishConfig": {
