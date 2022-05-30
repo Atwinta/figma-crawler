@@ -1,16 +1,14 @@
 const lodash = require('lodash');
 const path = require('path');
 const fs = require('fs');
-const StyleDictionaryPackage = require('style-dictionary');
-const tokensCfgPath = path.join(process.cwd(), 'tokens.config.js');
-
-if (!fs.existsSync(tokensCfgPath)) {
-  console.warn('Tokens config not found:', tokensCfgPath);
-  process.exit(0);
-}
-
-const tokensCfg = require(tokensCfgPath);
-const platformsMap = tokensCfg.platformsMap;
+const styleDictionary = require('style-dictionary');
+const platforms = [
+  'common',
+  'phone',
+  'tablet',
+  'desktop',
+  'desktop-large'
+];
 const colorTokensPath = path.join(__dirname, 'tokens', 'color');
 const colorTokensRegex = /\@([a-z0-9]+)\.tokens\.json/gi;
 const colorGroup = ['color', 'effect'];
@@ -69,17 +67,16 @@ function getStyleDictionaryConfig(platform) {
 
 console.log('Build started...');
 
-for (const designName in platformsMap) {
-  const platform = platformsMap[designName];
+platforms.forEach(platform => {
   console.log('\n==============================================');
   console.log(`\nProcessing: [${platform}]`);
 
-  const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(platform));
-
-  StyleDictionary.buildAllPlatforms();
+  styleDictionary
+    .extend(getStyleDictionaryConfig(platform))
+    .buildAllPlatforms();
 
   console.log('\nEnd processing');
-}
+});
 
 fs.readdir(colorTokensPath, (err, files) => {
   if (err) {
@@ -94,7 +91,7 @@ fs.readdir(colorTokensPath, (err, files) => {
       console.log('\n==============================================');
       console.log(`\nProcessing: [color ${colorType}]`);
 
-      StyleDictionaryPackage.extend({
+      styleDictionary.extend({
         source: [
           `./tokens/color/${file}`
         ],
