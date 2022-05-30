@@ -4,8 +4,6 @@
  */
 
 .theme_color_default {
-  --effect-shadow-control-view-action-focused: 0px 0px 0px 1px color(#a80a24 a(70%));
-  --effect-shadow-control-view-default-focused: 0px 0px 0px 1px color(#751222 a(80%));
   --color-link-border-focused: #818eff;
   --color-link-border-disabled: color(#cccccc a(30%));
   --color-link-typo-disabled: #cccccc;
@@ -61,6 +59,8 @@
   --color-content-brand-primary: #751222;
   --color-content-title: #222222;
   --color-content-base: #333333;
+  --effect-shadow-control-view-action-focused: 0px 0px 0px 1px color(#a80a24 a(70%));
+  --effect-shadow-control-view-default-focused: 0px 0px 0px 1px color(#751222 a(80%));
   --button-view-action-box-shadow-focused: var(--effect-shadow-control-view-action-focused);
   --button-view-action-border-color-pressed: var(--color-control-view-action-border-pressed);
   --button-view-action-border-color-hovered: var(--color-control-view-action-border-hovered);

@@ -1,0 +1,68 @@
+{
+  "color": {
+    "content": {
+      "inverse": {
+        "value": "#333333",
+        "group": "color"
+      },
+      "base": {
+        "value": "#ffffff",
+        "group": "color"
+      },
+      "title": {
+        "value": "#ffffff",
+        "group": "color"
+      },
+      "ghost": {
+        "value": "#a9afcb",
+        "group": "color"
+      }
+    },
+    "link": {
+      "view": {
+        "text": {
+          "typo": {
+            "base": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "hovered": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "visited": {
+              "value": "#dfdede",
+              "group": "color"
+            }
+          },
+          "border": {
+            "base": {
+              "value": "color(#ffffff a(30%))",
+              "group": "color"
+            },
+            "hovered": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "visited": {
+              "value": "color(#dfdede a(30%))",
+              "group": "color"
+            }
+          }
+        }
+      },
+      "typo": {
+        "disabled": {
+          "value": "#a4a4a4",
+          "group": "color"
+        }
+      },
+      "border": {
+        "disabled": {
+          "value": "color(#a5a5a5 a(30%))",
+          "group": "color"
+        }
+      }
+    }
+  }
+}

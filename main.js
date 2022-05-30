@@ -69,14 +69,27 @@ async function main() {
 				});
 			}
 		} else {
-			const file = path.join(tokenDir, `${category}.${tokensExt}`);
 			const json = token;
+			const sets = json.sets;
 
-			json && fs.writeFile(file, JSON.stringify({ [category]: json }, null, 2), (err) => {
-				if (err) console.log(err);
+			if (sets) {
+				for (const setName in sets) {
+					const set = sets[setName];
+					const file = path.join(tokenDir,`${category}@${setName}.${tokensExt}`);
+					set && fs.writeFile(file, JSON.stringify({ [category]: set }, null, 2), (err) => {
+						if (err) console.log(err);
 
-				console.log('> Token file written:', file);
-			});
+						console.log('> Token file written:', file);
+					});
+				}
+			} else {
+				const file = path.join(tokenDir, `${category}.${tokensExt}`);
+				json && fs.writeFile(file, JSON.stringify({ [category]: json }, null, 2), (err) => {
+					if (err) console.log(err);
+
+					console.log('> Token file written:', file);
+				});
+			}
 		}
 	}
 }

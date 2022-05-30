@@ -1,0 +1,19 @@
+/**
+ * Do not edit directly
+ * this file generated from tokens
+ */
+
+.theme__color_override_inverse {
+  --color-link-border-disabled: color(#a5a5a5 a(30%));
+  --color-link-typo-disabled: #a4a4a4;
+  --color-link-view-text-border-visited: color(#dfdede a(30%));
+  --color-link-view-text-border-hovered: #ffffff;
+  --color-link-view-text-border-base: color(#ffffff a(30%));
+  --color-link-view-text-typo-visited: #dfdede;
+  --color-link-view-text-typo-hovered: #ffffff;
+  --color-link-view-text-typo-base: #ffffff;
+  --color-content-ghost: #a9afcb;
+  --color-content-title: #ffffff;
+  --color-content-base: #ffffff;
+  --color-content-inverse: #333333;
+}
