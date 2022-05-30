@@ -10,6 +10,7 @@ const devToken = env.FIGMA_DEV_TOKEN;
 const tokensCfgPath = path.join(process.cwd(), 'tokens.config.js');
 const fileKey = process.argv[2];
 const tokensDir = process.argv[3] ? process.argv[3] : 'tokens';
+const tokensExt = 'tokens.json';
 
 if (!fs.existsSync(tokensCfgPath)) {
 	console.warn('Config not found:', tokensCfgPath);
@@ -30,20 +31,6 @@ const tokensCfg = require(tokensCfgPath);
 const platformsMap = tokensCfg.platformsMap;
 const colorFormat = tokensCfg.colorFormat || 'css';
 
-const tokens = {
-	type: 'tokens.json',
-	baseDir: tokensDir,
-	base: [
-		'typography',
-		'color',
-		'effect'
-	],
-	components: [
-		'text',
-		'button'
-	]
-};
-
 const getStylesArtboard = require('./lib/get-styles-artboard.js');
 
 headers.append('X-Figma-Token', devToken);
@@ -53,49 +40,45 @@ let query = {
 		host: 'api.figma.com',
 		protocol: 'https',
 	}
-}
+};
 
 async function main() {
 	console.log(`> Build tokens of file ${fileKey}. Go get a cup of coffee...`);
 
 	const data = await getStylesArtboard(fileKey, query.url, colorFormat);
+	const dist = path.join(process.cwd(), tokensDir);
 
-	const baseDir = path.join(process.cwd(), tokens.baseDir);
+	fs.existsSync(dist) && fs.rmdirSync(dist, { recursive: true });
 
-	fs.existsSync(baseDir) && fs.rmdirSync(baseDir, { recursive: true });
+	for (const category in data) {
+		const token = data[category];
+		const tokenDir = path.join(dist, category);
 
-	['base', 'components'].forEach(type => {
-		const dirPath = path.join(baseDir, type === 'components' ? 'components' : '');
+		fs.existsSync(tokenDir) || fs.mkdirSync(tokenDir, { recursive: true });
 
-		fs.existsSync(dirPath) || fs.mkdirSync(dirPath, { recursive: true });
+		if (category === 'text') {
+			for (const designPlatformName in platformsMap) {
+				const filePlatformName = platformsMap[designPlatformName];
+				const file = path.join(tokenDir, `${category}@${filePlatformName}.${tokensExt}`);
+				const json = token[designPlatformName];
 
-		tokens[type].forEach(component => {
-			const basePath = path.join(dirPath, component);
-
-			if (component === 'text') {
-				for (const designPlatformName in platformsMap) {
-					const filePlatformName = platformsMap[designPlatformName];
-					const file = `${basePath}@${filePlatformName}.${tokens.type}`;
-					const json = data[component][designPlatformName];
-
-					json && fs.writeFile(file, JSON.stringify({ [component]: json }, null, 2), (err) => {
-						err && console.log(err);
-
-						console.log('> Token file written:', file);
-					});
-				}
-			} else {
-				const file = `${basePath}.${tokens.type}`;
-				const json = data[component];
-
-				json && fs.writeFile(file, JSON.stringify({ [component]: json }, null, 2), (err) => {
-					if (err) console.log(err);
+				json && fs.writeFile(file, JSON.stringify({ [category]: json }, null, 2), (err) => {
+					err && console.log(err);
 
 					console.log('> Token file written:', file);
 				});
 			}
-		});
-	});
+		} else {
+			const file = path.join(tokenDir, `${category}.${tokensExt}`);
+			const json = token;
+
+			json && fs.writeFile(file, JSON.stringify({ [category]: json }, null, 2), (err) => {
+				if (err) console.log(err);
+
+				console.log('> Token file written:', file);
+			});
+		}
+	}
 }
 
 main().catch((err) => {
