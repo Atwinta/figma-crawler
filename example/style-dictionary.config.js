@@ -9,7 +9,7 @@ const platforms = [
   'desktop',
   'desktop-large'
 ];
-const colorTokensPath = path.join(__dirname, 'tokens', 'color');
+const colorTokensPath = path.join(__dirname, 'build', 'tokens', 'color');
 const colorTokensRegex = /\@([a-z0-9]+)\.tokens\.json/gi;
 const colorGroup = ['color', 'effect'];
 const cssParams = {
@@ -27,13 +27,13 @@ const cssParams = {
 };
 
 function getStyleDictionaryConfig(platform) {
-  const buildPath = `./themes/default/${platform}/`;
+  const buildPath = `./build/themes/default/${platform}/`;
 
   const source = platform === 'common' ? [
-    `./tokens/**/!(*@*).tokens.json`
+    `./build/tokens/**/!(*@*).tokens.json`
   ] : [];
 
-  source.push(`./tokens/**/*@${platform}.tokens.json`);
+  source.push(`./build/tokens/**/*@${platform}.tokens.json`);
 
   return {
     source: source,
@@ -93,11 +93,11 @@ fs.readdir(colorTokensPath, (err, files) => {
 
       styleDictionary.extend({
         source: [
-          `./tokens/color/${file}`
+          `./build/tokens/color/${file}`
         ],
         platforms: {
           'css/color/override': lodash.merge({}, cssParams, {
-            buildPath: './themes/default/common/',
+            buildPath: './build/themes/default/common/',
             files: [{
               destination: `color_override_${colorType}.css`,
               options: {

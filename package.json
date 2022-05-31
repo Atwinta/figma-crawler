@@ -7,10 +7,6 @@
 		"type": "git",
 		"url": "git+ssh://git@g.5th.ru/5th_ru/figma-crawler.git"
 	},
-	"scripts": {
-		"tokens:get": "node ./main.js -i vuTgbOSDxzY6pryHtZavBU -o tokens -c tokens.config.js",
-		"tokens:build": "node ./style-dictionary.config.js"
-	},
 	"dependencies": {
 		"dotenv": "9.0.2",
 		"lodash": "4.17.21",
@@ -20,8 +16,5 @@
 	"publishConfig": {
 		"access": "restricted",
 		"@5th_ru:registry": "https://g.5th.ru/api/v4/projects/56/packages/npm/"
-	},
-	"peerDependencies": {
-		"style-dictionary": "3.7.0"
 	}
 }

@@ -1,0 +1,16 @@
+{
+  "name": "figma-crawler-build-css",
+  "version": "1.0.0",
+  "description": "An example to show how build tokens from Figma file and css",
+  "scripts": {
+    "build:tokens": "node ./node_modules/@5th_ru/figma-crawler/main.js -i vuTgbOSDxzY6pryHtZavBU -o ./build/tokens -c ./figmacrawler.config.js",
+    "test_build:tokens": "node ../main.js -i vuTgbOSDxzY6pryHtZavBU -o ./build/tokens -c ./figmacrawler.config.js",
+    "build:css": "node ./style-dictionary.config.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@5th_ru/figma-crawler": "git+ssh://git@g.5th.ru:2222/5th_ru/figma-crawler.git",
+    "lodash": "4.17.21",
+    "style-dictionary": "3.7.0"
+  }
+}
