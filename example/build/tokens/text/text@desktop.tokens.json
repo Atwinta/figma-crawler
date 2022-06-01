@@ -8,10 +8,6 @@
       "lineHeight": {
         "value": "1.13",
         "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
-        "group": "typography"
       }
     },
     "headline-xxl": {
@@ -21,10 +17,6 @@
       },
       "lineHeight": {
         "value": "1.13",
-        "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
         "group": "typography"
       }
     },
@@ -36,10 +28,6 @@
       "lineHeight": {
         "value": "1.14",
         "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
-        "group": "typography"
       }
     },
     "headline-l": {
@@ -49,52 +37,6 @@
       },
       "lineHeight": {
         "value": "1.18",
-        "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
-        "group": "typography"
-      }
-    },
-    "headline-m": {
-      "fontSize": {
-        "value": "36px",
-        "group": "typography"
-      },
-      "lineHeight": {
-        "value": "1.22",
-        "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
-        "group": "typography"
-      }
-    },
-    "headline-s": {
-      "fontSize": {
-        "value": "24px",
-        "group": "typography"
-      },
-      "lineHeight": {
-        "value": "1.33",
-        "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
-        "group": "typography"
-      }
-    },
-    "headline-xs": {
-      "fontSize": {
-        "value": "18px",
-        "group": "typography"
-      },
-      "lineHeight": {
-        "value": "1.44",
-        "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
         "group": "typography"
       }
     },
@@ -106,10 +48,6 @@
       "lineHeight": {
         "value": "1.11",
         "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
-        "group": "typography"
       }
     },
     "subheader-l": {
@@ -119,10 +57,6 @@
       },
       "lineHeight": {
         "value": "1.13",
-        "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
         "group": "typography"
       }
     },
@@ -134,10 +68,6 @@
       "lineHeight": {
         "value": "1.14",
         "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
-        "group": "typography"
       }
     },
     "subheader-s": {
@@ -147,10 +77,6 @@
       },
       "lineHeight": {
         "value": "1.15",
-        "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
         "group": "typography"
       }
     },
@@ -162,10 +88,6 @@
       "lineHeight": {
         "value": "1.33",
         "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
-        "group": "typography"
       }
     },
     "body-long-l": {
@@ -175,10 +97,6 @@
       },
       "lineHeight": {
         "value": "1.40",
-        "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
         "group": "typography"
       }
     },
@@ -190,10 +108,6 @@
       "lineHeight": {
         "value": "1.44",
         "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
-        "group": "typography"
       }
     },
     "body-long-s": {
@@ -203,10 +117,6 @@
       },
       "lineHeight": {
         "value": "1.38",
-        "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
         "group": "typography"
       }
     },
@@ -218,10 +128,6 @@
       "lineHeight": {
         "value": "1.17",
         "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
-        "group": "typography"
       }
     },
     "body-short-l": {
@@ -231,10 +137,6 @@
       },
       "lineHeight": {
         "value": "1.20",
-        "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
         "group": "typography"
       }
     },
@@ -246,10 +148,6 @@
       "lineHeight": {
         "value": "1.22",
         "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
-        "group": "typography"
       }
     },
     "body-short-s": {
@@ -259,10 +157,6 @@
       },
       "lineHeight": {
         "value": "1.25",
-        "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
         "group": "typography"
       }
     },
@@ -274,10 +168,6 @@
       "lineHeight": {
         "value": "1.22",
         "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
-        "group": "typography"
       }
     },
     "control-m": {
@@ -288,10 +178,6 @@
       "lineHeight": {
         "value": "1.25",
         "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
-        "group": "typography"
       }
     },
     "control-s": {
@@ -301,10 +187,6 @@
       },
       "lineHeight": {
         "value": "1.29",
-        "group": "typography"
-      },
-      "letterSpacing": {
-        "value": "normal",
         "group": "typography"
       }
     }
