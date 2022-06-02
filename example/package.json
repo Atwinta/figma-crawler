@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "An example to show how build tokens from Figma file and css",
   "scripts": {
-    "build:tokens": "node ./node_modules/@5th_ru/figma-crawler/main.js -i vuTgbOSDxzY6pryHtZavBU -o ./build/tokens -c ./figmacrawler.config.js",
-    "test_build:tokens": "node ../main.js -i vuTgbOSDxzY6pryHtZavBU -o ./build/tokens -c ./figmacrawler.config.js",
+    "build:tokens": "node ./node_modules/@5th_ru/figma-crawler/main.js -i vuTgbOSDxzY6pryHtZavBU -o ./build/tokens -c ./figmacrawler.config.js -m join",
+    "test_build:tokens": "node ../main.js -i vuTgbOSDxzY6pryHtZavBU -o ./build/tokens -c ./figmacrawler.config.js -m join",
     "build:css": "node ./style-dictionary.config.js"
   },
   "license": "MIT",

@@ -21,7 +21,7 @@ headers.append('X-Figma-Token', params.figmaDevToken);
 async function main() {
 	console.log(`\n> Build tokens of file ${fileKey}. Go get a cup of coffee...`);
 
-	const data = await getStylesArtboard(fileKey, query.url, config, headers);
+	const data = await getStylesArtboard({ fileKey, URLformat: query.url, config, params, headers });
 	const dist = params.output;
 
 	fs.existsSync(dist) && fs.rmdirSync(dist, { recursive: true });
