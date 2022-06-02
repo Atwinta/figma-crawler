@@ -46,8 +46,6 @@
   --button-size-s-padding-left: 8px;
   --button-size-s-padding-bottom: 4px;
   --button-size-s-padding-top: 4px;
-  --button-size-s-line-height: 1.29;
-  --button-size-s-font-size: 14px;
   --button-size-s-gap: 4px;
   --button-size-m-icon-height: 10px;
   --button-size-m-icon-width: 10px;
@@ -55,7 +53,5 @@
   --button-size-m-padding-left: 12px;
   --button-size-m-padding-bottom: 6px;
   --button-size-m-padding-top: 6px;
-  --button-size-m-line-height: 1.25;
-  --button-size-m-font-size: 16px;
   --button-size-m-gap: 5px;
 }

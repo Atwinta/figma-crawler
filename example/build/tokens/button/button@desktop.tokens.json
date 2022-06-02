@@ -6,14 +6,6 @@
           "value": "5px",
           "group": "size"
         },
-        "fontSize": {
-          "value": "16px",
-          "group": "typography"
-        },
-        "lineHeight": {
-          "value": "1.25",
-          "group": "typography"
-        },
         "paddingTop": {
           "value": "6px",
           "group": "size"
@@ -45,14 +37,6 @@
         "gap": {
           "value": "4px",
           "group": "size"
-        },
-        "fontSize": {
-          "value": "14px",
-          "group": "typography"
-        },
-        "lineHeight": {
-          "value": "1.29",
-          "group": "typography"
         },
         "paddingTop": {
           "value": "4px",

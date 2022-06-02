@@ -80,9 +80,6 @@
   --button-size-s-padding-left: 6px;
   --button-size-s-padding-bottom: 3px;
   --button-size-s-padding-top: 3px;
-  --button-size-s-line-height: 1.33;
-  --button-size-s-font-weight: 400;
-  --button-size-s-font-size: 12px;
   --button-size-s-gap: 3px;
   --button-size-s-border-radius: 4px;
   --button-size-m-icon-height: 9px;
@@ -91,9 +88,12 @@
   --button-size-m-padding-left: 8px;
   --button-size-m-padding-bottom: 4px;
   --button-size-m-padding-top: 4px;
-  --button-size-m-line-height: 1.29;
-  --button-size-m-font-weight: 400;
-  --button-size-m-font-size: 14px;
   --button-size-m-gap: 4px;
   --button-size-m-border-radius: 4px;
+  --button-size-s-letter-spacing: var(--text-control-s-letter-spacing);
+  --button-size-s-line-height: var(--text-control-s-line-height);
+  --button-size-s-font-size: var(--text-control-s-font-size);
+  --button-size-m-letter-spacing: var(--text-control-m-letter-spacing);
+  --button-size-m-line-height: var(--text-control-m-line-height);
+  --button-size-m-font-size: var(--text-control-m-font-size);
 }
