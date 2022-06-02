@@ -70,6 +70,8 @@
   --text-display-xl-letter-spacing: normal;
   --text-display-xl-line-height: 1.19;
   --text-display-xl-font-size: 42px;
+  --grid-gutter: 8px;
+  --grid-offset: 16px;
   --button-view-action-size-s-border-width: 0;
   --button-view-action-size-m-border-width: 0;
   --button-view-default-size-s-border-width: 1px;

@@ -1,0 +1,8 @@
+{
+  "grid": {
+    "gutter": {
+      "value": "32px",
+      "group": "grid"
+    }
+  }
+}

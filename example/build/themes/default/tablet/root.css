@@ -21,6 +21,8 @@
   --text-headline-xxl-font-size: 52px;
   --text-display-xl-line-height: 1.15;
   --text-display-xl-font-size: 52px;
+  --grid-gutter: 16px;
+  --grid-offset: 32px;
   --button-size-m-padding-right: 10px;
   --button-size-m-padding-left: 10px;
 }
