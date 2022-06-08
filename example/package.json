@@ -4,7 +4,7 @@
   "description": "An example to show how build tokens from Figma file and css",
   "scripts": {
     "build:tokens": "node ./node_modules/@5th_ru/figma-crawler/main.js -i vuTgbOSDxzY6pryHtZavBU -o ./build/tokens -c ./figmacrawler.config.js -p join",
-    "test_build:tokens": "node ../main.js -i vuTgbOSDxzY6pryHtZavBU -o ./build/tokens -c ./figmacrawler.config.js -p join",
+    "build_dev:tokens": "node ../main.js -i vuTgbOSDxzY6pryHtZavBU -o ./build/tokens -c ./figmacrawler.config.js -p join",
     "build:css": "node ./style-dictionary.config.js"
   },
   "license": "MIT",
