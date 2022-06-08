@@ -1,17 +1,15 @@
 const fs = require('fs');
 const path = require('path');
-const params = require('./lib/params');
 const config = require('./lib/config');
 const writeToken = require('./lib/write-token');
-const fileKey = params.fileKey;
 const tokensExt = 'tokens.json';
 const getStylesArtboard = require('./lib/get-styles-artboard.js');
 
 async function main() {
-	console.log(`\n> Build tokens of file ${fileKey}. Go get a cup of coffee...`);
+	console.log(`\n> Build tokens of file ${config.fileKey}. Go get a cup of coffee...`);
 
-	const data = await getStylesArtboard({ fileKey, config, params });
-	const dist = params.output;
+	const data = await getStylesArtboard(config);
+	const dist = config.output;
 
 	fs.existsSync(dist) && fs.rmdirSync(dist, { recursive: true });
 

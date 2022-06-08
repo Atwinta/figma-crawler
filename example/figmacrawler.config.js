@@ -1,9 +1,6 @@
 module.exports = {
-	colorFormat: 'postcss', // <postcss|css>
-	platforms: [
-    'desktop-large',
-    'desktop',
-    'tablet',
-    'phone'
-  ]
+  fileKey: 'vuTgbOSDxzY6pryHtZavBU',
+  output: './build/tokens',
+  platformsMode: 'join',
+	colorFormat: 'postcss'
 };
