@@ -1,27 +1,16 @@
-const fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
 const params = require('./lib/params');
-const loadConfig = require('./lib/config');
+const config = require('./lib/config');
 const writeToken = require('./lib/write-token');
-const headers = new fetch.Headers();
 const fileKey = params.fileKey;
 const tokensExt = 'tokens.json';
-const config = loadConfig(params.config);
 const getStylesArtboard = require('./lib/get-styles-artboard.js');
-const query = {
-	url: {
-		host: 'api.figma.com',
-		protocol: 'https',
-	}
-};
-
-headers.append('X-Figma-Token', params.figmaDevToken);
 
 async function main() {
 	console.log(`\n> Build tokens of file ${fileKey}. Go get a cup of coffee...`);
 
-	const data = await getStylesArtboard({ fileKey, URLformat: query.url, config, params, headers });
+	const data = await getStylesArtboard({ fileKey, config, params });
 	const dist = params.output;
 
 	fs.existsSync(dist) && fs.rmdirSync(dist, { recursive: true });
