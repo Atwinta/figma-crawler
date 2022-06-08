@@ -41,6 +41,120 @@
         "value": "normal",
         "group": "typography"
       }
+    },
+    "display-xl": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "headline-xxl": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "headline-xl": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "headline-l": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "headline-m": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "headline-s": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "headline-xs": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "subheader-xl": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "subheader-l": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "subheader-m": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "subheader-s": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-long-xl": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-long-l": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-long-m": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-long-s": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-short-xl": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-short-l": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-short-m": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    },
+    "body-short-s": {
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
     }
   }
 }

@@ -25,17 +25,25 @@ const cssParams = {
     }
   }]
 };
+const referencesToken = 'references.tokens.json';
+
+const isNotReferences = (token) => {
+  return token.filePath.indexOf(referencesToken) < 0;
+};
 
 function getStyleDictionaryConfig(platform) {
   const buildPath = `./build/themes/default/${platform}/`;
 
   const source = platform === 'common' ? [
-    `./build/tokens/**/!(*@*).tokens.json`
+    `./build/tokens/**/!(*@*|references).tokens.json`
   ] : [];
 
   source.push(`./build/tokens/**/*@${platform}.tokens.json`);
 
   return {
+    include: [
+      `./build/tokens/references/${referencesToken}`
+    ],
     source: source,
     platforms: {
       'css': lodash.merge({ buildPath }, cssParams, {
@@ -45,7 +53,7 @@ function getStyleDictionaryConfig(platform) {
             selector: '.theme_root_default'
           },
           filter: token => {
-            return colorGroup.indexOf(token.group) < 0;
+            return colorGroup.indexOf(token.group) < 0 && isNotReferences(token);
           }
         }]
       }),
@@ -57,7 +65,7 @@ function getStyleDictionaryConfig(platform) {
             selector: '.theme_color_default'
           },
           filter: token => {
-            return ~colorGroup.indexOf(token.group);
+            return ~colorGroup.indexOf(token.group) && isNotReferences(token);
           }
         }]
       })

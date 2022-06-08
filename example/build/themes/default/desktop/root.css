@@ -4,10 +4,19 @@
  */
 
 .theme_root_default {
-  --text-control-s-line-height: 1.29;
-  --text-control-s-font-size: 14px;
-  --text-control-m-line-height: 1.25;
-  --text-control-m-font-size: 16px;
+  --grid-gutter: 32px;
+  --button-size-s-padding-right: 8px;
+  --button-size-s-padding-left: 8px;
+  --button-size-s-padding-bottom: 4px;
+  --button-size-s-padding-top: 4px;
+  --button-size-s-gap: 4px;
+  --button-size-m-icon-height: 10px;
+  --button-size-m-icon-width: 10px;
+  --button-size-m-padding-right: 12px;
+  --button-size-m-padding-left: 12px;
+  --button-size-m-padding-bottom: 6px;
+  --button-size-m-padding-top: 6px;
+  --button-size-m-gap: 5px;
   --text-control-l-line-height: 1.22;
   --text-control-l-font-size: 18px;
   --text-body-short-s-line-height: 1.25;
@@ -42,17 +51,8 @@
   --text-headline-xxl-font-size: 64px;
   --text-display-xl-line-height: 1.13;
   --text-display-xl-font-size: 64px;
-  --grid-gutter: 32px;
-  --button-size-s-padding-right: 8px;
-  --button-size-s-padding-left: 8px;
-  --button-size-s-padding-bottom: 4px;
-  --button-size-s-padding-top: 4px;
-  --button-size-s-gap: 4px;
-  --button-size-m-icon-height: 10px;
-  --button-size-m-icon-width: 10px;
-  --button-size-m-padding-right: 12px;
-  --button-size-m-padding-left: 12px;
-  --button-size-m-padding-bottom: 6px;
-  --button-size-m-padding-top: 6px;
-  --button-size-m-gap: 5px;
+  --text-control-s-line-height: 1.29;
+  --text-control-s-font-size: 14px;
+  --text-control-m-line-height: 1.25;
+  --text-control-m-font-size: 16px;
 }

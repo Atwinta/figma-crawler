@@ -2,25 +2,9 @@
   "button": {
     "size": {
       "m": {
-        "borderRadius": {
-          "value": "4px",
-          "group": "size"
-        },
         "gap": {
           "value": "4px",
           "group": "size"
-        },
-        "fontSize": {
-          "value": "{text.control-m.fontSize.value}",
-          "group": "typography"
-        },
-        "lineHeight": {
-          "value": "{text.control-m.lineHeight.value}",
-          "group": "typography"
-        },
-        "letterSpacing": {
-          "value": "{text.control-m.letterSpacing.value}",
-          "group": "typography"
         },
         "paddingTop": {
           "value": "4px",
@@ -50,25 +34,9 @@
         }
       },
       "s": {
-        "borderRadius": {
-          "value": "4px",
-          "group": "size"
-        },
         "gap": {
           "value": "3px",
           "group": "size"
-        },
-        "fontSize": {
-          "value": "{text.control-s.fontSize.value}",
-          "group": "typography"
-        },
-        "lineHeight": {
-          "value": "{text.control-s.lineHeight.value}",
-          "group": "typography"
-        },
-        "letterSpacing": {
-          "value": "{text.control-s.letterSpacing.value}",
-          "group": "typography"
         },
         "paddingTop": {
           "value": "3px",
@@ -85,50 +53,6 @@
         "paddingRight": {
           "value": "6px",
           "group": "size"
-        },
-        "icon": {
-          "width": {
-            "value": "8px",
-            "group": "size"
-          },
-          "height": {
-            "value": "8px",
-            "group": "size"
-          }
-        }
-      }
-    },
-    "view": {
-      "default": {
-        "size": {
-          "m": {
-            "borderWidth": {
-              "value": "1px",
-              "group": "size"
-            }
-          },
-          "s": {
-            "borderWidth": {
-              "value": "1px",
-              "group": "size"
-            }
-          }
-        }
-      },
-      "action": {
-        "size": {
-          "m": {
-            "borderWidth": {
-              "value": 0,
-              "group": "size"
-            }
-          },
-          "s": {
-            "borderWidth": {
-              "value": 0,
-              "group": "size"
-            }
-          }
         }
       }
     }

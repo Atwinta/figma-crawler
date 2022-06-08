@@ -1,0 +1,182 @@
+{
+  "text": {
+    "control-m": {
+      "fontSize": {
+        "value": "unset",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "unset",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "unset",
+        "group": "typography"
+      }
+    },
+    "control-s": {
+      "fontSize": {
+        "value": "unset",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "unset",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "unset",
+        "group": "typography"
+      }
+    }
+  },
+  "color": {
+    "control": {
+      "view": {
+        "default": {
+          "fill": {
+            "base": {
+              "value": "unset",
+              "group": "color"
+            },
+            "disabled": {
+              "value": "unset",
+              "group": "color"
+            },
+            "hovered": {
+              "value": "unset",
+              "group": "color"
+            },
+            "pressed": {
+              "value": "unset",
+              "group": "color"
+            }
+          },
+          "typo": {
+            "base": {
+              "value": "unset",
+              "group": "color"
+            },
+            "disabled": {
+              "value": "unset",
+              "group": "color"
+            },
+            "hovered": {
+              "value": "unset",
+              "group": "color"
+            },
+            "pressed": {
+              "value": "unset",
+              "group": "color"
+            },
+            "focused": {
+              "value": "unset",
+              "group": "color"
+            }
+          },
+          "border": {
+            "base": {
+              "value": "unset",
+              "group": "color"
+            },
+            "disabled": {
+              "value": "unset",
+              "group": "color"
+            },
+            "focused": {
+              "value": "unset",
+              "group": "color"
+            },
+            "hovered": {
+              "value": "unset",
+              "group": "color"
+            },
+            "pressed": {
+              "value": "unset",
+              "group": "color"
+            }
+          }
+        },
+        "action": {
+          "fill": {
+            "base": {
+              "value": "unset",
+              "group": "color"
+            },
+            "disabled": {
+              "value": "unset",
+              "group": "color"
+            },
+            "hovered": {
+              "value": "unset",
+              "group": "color"
+            },
+            "pressed": {
+              "value": "unset",
+              "group": "color"
+            }
+          },
+          "typo": {
+            "base": {
+              "value": "unset",
+              "group": "color"
+            },
+            "disabled": {
+              "value": "unset",
+              "group": "color"
+            },
+            "hovered": {
+              "value": "unset",
+              "group": "color"
+            },
+            "pressed": {
+              "value": "unset",
+              "group": "color"
+            },
+            "focused": {
+              "value": "unset",
+              "group": "color"
+            }
+          },
+          "border": {
+            "base": {
+              "value": "unset",
+              "group": "color"
+            },
+            "disabled": {
+              "value": "unset",
+              "group": "color"
+            },
+            "hovered": {
+              "value": "unset",
+              "group": "color"
+            },
+            "pressed": {
+              "value": "unset",
+              "group": "color"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effect": {
+    "shadow": {
+      "control": {
+        "view": {
+          "default": {
+            "focused": {
+              "value": "unset",
+              "group": "effect"
+            }
+          },
+          "action": {
+            "focused": {
+              "value": "unset",
+              "group": "effect"
+            }
+          }
+        }
+      }
+    }
+  }
+}

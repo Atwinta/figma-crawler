@@ -4,6 +4,36 @@
  */
 
 .theme_root_default {
+  --button-size-s-icon-height: 8px;
+  --button-size-s-icon-width: 8px;
+  --button-size-s-border-radius: 4px;
+  --button-size-m-border-radius: 4px;
+  --button-view-action-size-s-border-width: 0;
+  --button-view-action-size-m-border-width: 0;
+  --button-view-default-size-s-border-width: 1px;
+  --button-view-default-size-m-border-width: 1px;
+  --typography-controls-font-family: 'Fira Sans', sans-serif;
+  --typography-headline-font-family: 'Fira Sans', sans-serif;
+  --typography-body-font-family: 'Fira Sans', sans-serif;
+  --text-body-short-s-letter-spacing: normal;
+  --text-body-short-m-letter-spacing: normal;
+  --text-body-short-l-letter-spacing: normal;
+  --text-body-short-xl-letter-spacing: normal;
+  --text-body-long-s-letter-spacing: normal;
+  --text-body-long-m-letter-spacing: normal;
+  --text-body-long-l-letter-spacing: normal;
+  --text-body-long-xl-letter-spacing: normal;
+  --text-subheader-s-letter-spacing: normal;
+  --text-subheader-m-letter-spacing: normal;
+  --text-subheader-l-letter-spacing: normal;
+  --text-subheader-xl-letter-spacing: normal;
+  --text-headline-xs-letter-spacing: normal;
+  --text-headline-s-letter-spacing: normal;
+  --text-headline-m-letter-spacing: normal;
+  --text-headline-l-letter-spacing: normal;
+  --text-headline-xl-letter-spacing: normal;
+  --text-headline-xxl-letter-spacing: normal;
+  --text-display-xl-letter-spacing: normal;
   --text-caption-m-letter-spacing: normal;
   --text-caption-m-line-height: 1.25;
   --text-caption-m-font-size: 12px;
@@ -13,8 +43,11 @@
   --text-caption-xl-letter-spacing: normal;
   --text-caption-xl-line-height: 1.21;
   --text-caption-xl-font-size: 14px;
-  --typography-controls-font-family: 'Fira Sans', sans-serif;
-  --typography-headline-font-family: 'Fira Sans', sans-serif;
-  --typography-body-font-family: 'Fira Sans', sans-serif;
+  --button-size-s-letter-spacing: var(--text-control-s-letter-spacing);
+  --button-size-s-line-height: var(--text-control-s-line-height);
+  --button-size-s-font-size: var(--text-control-s-font-size);
+  --button-size-m-letter-spacing: var(--text-control-m-letter-spacing);
+  --button-size-m-line-height: var(--text-control-m-line-height);
+  --button-size-m-font-size: var(--text-control-m-font-size);
   --button-font-family: var(--typography-controls-font-family);
 }

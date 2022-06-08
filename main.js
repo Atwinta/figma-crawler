@@ -31,17 +31,19 @@ async function main() {
 		const sets = token.sets;
 		const tokenDir = path.join(dist, category);
 
-		fs.existsSync(tokenDir) || fs.mkdirSync(tokenDir, { recursive: true });
+		if (Object.entries(category || {}).length) {
+			fs.existsSync(tokenDir) || fs.mkdirSync(tokenDir, { recursive: true });
 
-		if (sets) {
-			for (const setName in sets) {
-				const set = sets[setName];
-				const file = path.join(tokenDir,`${category}@${setName}.${tokensExt}`);
-				writeToken(file, { [category]: set });
+			if (sets) {
+				for (const setName in sets) {
+					const set = sets[setName];
+					const file = path.join(tokenDir,`${category}@${setName}.${tokensExt}`);
+					writeToken(file, { [category]: set });
+				}
+			} else {
+				const file = path.join(tokenDir, `${category}.${tokensExt}`);
+				writeToken(file, category === 'references' ? token : { [category]: token });
 			}
-		} else {
-			const file = path.join(tokenDir, `${category}.${tokensExt}`);
-			writeToken(file, { [category]: token });
 		}
 	}
 }

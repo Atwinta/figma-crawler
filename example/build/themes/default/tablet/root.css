@@ -4,6 +4,10 @@
  */
 
 .theme_root_default {
+  --grid-gutter: 16px;
+  --grid-offset: 32px;
+  --button-size-m-padding-right: 10px;
+  --button-size-m-padding-left: 10px;
   --text-subheader-m-line-height: 1.17;
   --text-subheader-m-font-size: 24px;
   --text-subheader-l-line-height: 1.14;
@@ -21,8 +25,4 @@
   --text-headline-xxl-font-size: 52px;
   --text-display-xl-line-height: 1.15;
   --text-display-xl-font-size: 52px;
-  --grid-gutter: 16px;
-  --grid-offset: 32px;
-  --button-size-m-padding-right: 10px;
-  --button-size-m-padding-left: 10px;
 }
