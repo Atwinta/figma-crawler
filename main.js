@@ -9,14 +9,14 @@ async function main() {
 	console.log(`\n> Build tokens of file ${config.fileKey}. Go get a cup of coffee...`);
 
 	const data = await getStylesArtboard(config);
-	const dist = config.output;
+	const output = config.output;
 
-	fs.existsSync(dist) && fs.rmdirSync(dist, { recursive: true });
+	config.clear && fs.existsSync(output) && fs.rmdirSync(output, { recursive: true });
 
 	for (const category in data) {
 		const token = data[category];
 		const sets = token.sets;
-		const tokenDir = path.join(dist, category);
+		const tokenDir = path.join(output, category);
 
 		if (Object.entries(category || {}).length) {
 			fs.existsSync(tokenDir) || fs.mkdirSync(tokenDir, { recursive: true });
