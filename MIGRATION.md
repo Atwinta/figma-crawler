@@ -1,5 +1,23 @@
 # Миграция
 
+## 0.5.0
+
+### Конфиг
+Изменения конфига `tokens.config.js` -> `figmacrawler.config.json`. Подробнее в [README.md](README.md).
+
+
+### Запуск
+
+Было:
+```sh
+node node_modules/@5th_ru/figma-crawler/main.js <fileKey> output
+```
+
+Стало:
+```sh
+node node_modules/@5th_ru/figma-crawler/main.js -c ./figmacrawler.config.json
+```
+
 ## 0.4.0
 
 ### Конфиг
