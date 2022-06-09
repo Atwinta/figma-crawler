@@ -4,8 +4,8 @@
  */
 
 .theme_root_default {
-  --grid-gutter: 16px;
   --grid-offset: 32px;
+  --grid-gutter: 16px;
   --button-size-m-padding-right: 10px;
   --button-size-m-padding-left: 10px;
   --text-subheader-m-line-height: 1.17;

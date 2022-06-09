@@ -1,11 +1,11 @@
 {
   "grid": {
-    "offset": {
-      "value": "16px",
-      "group": "grid"
-    },
     "gutter": {
       "value": "8px",
+      "group": "grid"
+    },
+    "offset": {
+      "value": "16px",
       "group": "grid"
     }
   }

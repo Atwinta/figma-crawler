@@ -4,8 +4,8 @@
  */
 
 .theme_root_default {
-  --grid-gutter: 8px;
   --grid-offset: 16px;
+  --grid-gutter: 8px;
   --button-size-s-padding-right: 6px;
   --button-size-s-padding-left: 6px;
   --button-size-s-padding-bottom: 3px;
