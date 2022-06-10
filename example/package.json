@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@5th_ru/figma-crawler": "git+ssh://git@g.5th.ru:2222/5th_ru/figma-crawler.git",
+    "@5th_ru/figma-crawler": "^0.5.0-rc.0",
     "lodash": "4.17.21",
     "style-dictionary": "3.7.0"
   }
