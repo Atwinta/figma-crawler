@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "description": "An example to show how build tokens from Figma file and css",
   "scripts": {
-    "build:tokens": "node ./node_modules/@5th_ru/figma-crawler/main.js -c ./figmacrawler.config.json",
-    "build_dev:tokens": "node ../main.js -c ./figmacrawler.config.json",
+    "build:tokens": "node ../main.js -c ./figmacrawler.config.json",
     "build:css": "node ./style-dictionary.config.js"
   },
   "license": "MIT",
   "devDependencies": {
-    "@5th_ru/figma-crawler": "^0.5.0-rc.0",
     "lodash": "4.17.21",
     "style-dictionary": "3.7.0"
   }
