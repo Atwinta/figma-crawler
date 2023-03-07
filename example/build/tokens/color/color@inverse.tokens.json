@@ -45,7 +45,7 @@
           },
           "border": {
             "default": {
-              "value": "color(#ffffff a(30%))",
+              "value": "rgba(255, 255, 255, 0.30)",
               "group": "color"
             },
             "hover": {
@@ -53,11 +53,11 @@
               "group": "color"
             },
             "visit": {
-              "value": "color(#dfdede a(30%))",
+              "value": "rgba(223, 222, 222, 0.30)",
               "group": "color"
             },
             "disable": {
-              "value": "color(#a5a5a5 a(30%))",
+              "value": "rgba(165, 165, 165, 0.30)",
               "group": "color"
             },
             "focus": {

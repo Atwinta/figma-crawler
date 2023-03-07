@@ -5,10 +5,10 @@
 
 .theme__color_override_inverse {
   --color-link-view-second-border-focus: #818eff;
-  --color-link-view-second-border-disable: color(#a5a5a5 a(30%));
-  --color-link-view-second-border-visit: color(#dfdede a(30%));
+  --color-link-view-second-border-disable: rgba(165, 165, 165, 0.30);
+  --color-link-view-second-border-visit: rgba(223, 222, 222, 0.30);
   --color-link-view-second-border-hover: #ffffff;
-  --color-link-view-second-border-default: color(#ffffff a(30%));
+  --color-link-view-second-border-default: rgba(255, 255, 255, 0.30);
   --color-link-view-second-typo-disable: #a4a4a4;
   --color-link-view-second-typo-visit: #dfdede;
   --color-link-view-second-typo-focus: #ffffff;

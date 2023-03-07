@@ -2,6 +2,6 @@
   "fileKey": "GzA9igVQaY9daGLvpgizKz",
   "output": "./build/tokens",
   "platformsMode": "join",
-	"colorFormat": "postcss",
+	"colorFormat": "css",
   "clear": true
 }

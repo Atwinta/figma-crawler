@@ -57,7 +57,7 @@
           },
           "border": {
             "default": {
-              "value": "color(#3139e9 a(30%))",
+              "value": "rgba(49, 57, 233, 0.30)",
               "group": "color"
             },
             "hover": {
@@ -65,11 +65,11 @@
               "group": "color"
             },
             "visit": {
-              "value": "color(#6167ec a(30%))",
+              "value": "rgba(97, 103, 236, 0.30)",
               "group": "color"
             },
             "disable": {
-              "value": "color(#cccccc a(30%))",
+              "value": "rgba(204, 204, 204, 0.30)",
               "group": "color"
             },
             "focus": {
@@ -103,7 +103,7 @@
           },
           "border": {
             "default": {
-              "value": "color(#333333 a(30%))",
+              "value": "rgba(51, 51, 51, 0.30)",
               "group": "color"
             },
             "hover": {
@@ -111,7 +111,7 @@
               "group": "color"
             },
             "visit": {
-              "value": "color(#707070 a(30%))",
+              "value": "rgba(112, 112, 112, 0.30)",
               "group": "color"
             },
             "focus": {
@@ -119,7 +119,7 @@
               "group": "color"
             },
             "disable": {
-              "value": "color(#cccccc a(30%))",
+              "value": "rgba(204, 204, 204, 0.30)",
               "group": "color"
             }
           }
@@ -149,7 +149,7 @@
           },
           "border": {
             "default": {
-              "value": "color(#8284bb a(30%))",
+              "value": "rgba(130, 132, 187, 0.30)",
               "group": "color"
             },
             "hover": {
@@ -157,7 +157,7 @@
               "group": "color"
             },
             "visit": {
-              "value": "color(#a3a5c4 a(30%))",
+              "value": "rgba(163, 165, 196, 0.30)",
               "group": "color"
             },
             "focus": {
@@ -165,7 +165,7 @@
               "group": "color"
             },
             "disable": {
-              "value": "color(#cccccc a(30%))",
+              "value": "rgba(204, 204, 204, 0.30)",
               "group": "color"
             }
           }
@@ -237,7 +237,7 @@
               "group": "color"
             },
             "disable": {
-              "value": "color(#9a9a9a a(50%))",
+              "value": "rgba(154, 154, 154, 0.50)",
               "group": "color"
             }
           }
@@ -311,23 +311,23 @@
           },
           "icon": {
             "default": {
-              "value": "color(#000000 a(50%))",
+              "value": "rgba(0, 0, 0, 0.50)",
               "group": "color"
             },
             "hover": {
-              "value": "color(#000000 a(50%))",
+              "value": "rgba(0, 0, 0, 0.50)",
               "group": "color"
             },
             "focus": {
-              "value": "color(#000000 a(50%))",
+              "value": "rgba(0, 0, 0, 0.50)",
               "group": "color"
             },
             "press": {
-              "value": "color(#000000 a(50%))",
+              "value": "rgba(0, 0, 0, 0.50)",
               "group": "color"
             },
             "disable": {
-              "value": "color(#999999 a(50%))",
+              "value": "rgba(153, 153, 153, 0.50)",
               "group": "color"
             }
           }

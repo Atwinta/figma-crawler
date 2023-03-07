@@ -4,11 +4,11 @@
  */
 
 .theme_color_default {
-  --color-button-view-second-icon-disable: color(#999999 a(50%));
-  --color-button-view-second-icon-press: color(#000000 a(50%));
-  --color-button-view-second-icon-focus: color(#000000 a(50%));
-  --color-button-view-second-icon-hover: color(#000000 a(50%));
-  --color-button-view-second-icon-default: color(#000000 a(50%));
+  --color-button-view-second-icon-disable: rgba(153, 153, 153, 0.50);
+  --color-button-view-second-icon-press: rgba(0, 0, 0, 0.50);
+  --color-button-view-second-icon-focus: rgba(0, 0, 0, 0.50);
+  --color-button-view-second-icon-hover: rgba(0, 0, 0, 0.50);
+  --color-button-view-second-icon-default: rgba(0, 0, 0, 0.50);
   --color-button-view-second-fill-press: #f8f6f6;
   --color-button-view-second-fill-disable: #ececec;
   --color-button-view-second-fill-focus: #ffffff;
@@ -24,7 +24,7 @@
   --color-button-view-second-typo-focus: #000000;
   --color-button-view-second-typo-hover: #000000;
   --color-button-view-second-typo-default: #000000;
-  --color-button-view-main-icon-disable: color(#9a9a9a a(50%));
+  --color-button-view-main-icon-disable: rgba(154, 154, 154, 0.50);
   --color-button-view-main-icon-press: #ffffff;
   --color-button-view-main-icon-focus: #ffffff;
   --color-button-view-main-icon-hover: #ffffff;
@@ -39,31 +39,31 @@
   --color-button-view-main-fill-hover: #97162b;
   --color-button-view-main-fill-focus: #751222;
   --color-button-view-main-fill-deafult: #751222;
-  --color-link-view-tertiary-border-disable: color(#cccccc a(30%));
+  --color-link-view-tertiary-border-disable: rgba(204, 204, 204, 0.30);
   --color-link-view-tertiary-border-focus: #818eff;
-  --color-link-view-tertiary-border-visit: color(#a3a5c4 a(30%));
+  --color-link-view-tertiary-border-visit: rgba(163, 165, 196, 0.30);
   --color-link-view-tertiary-border-hover: #8284bb;
-  --color-link-view-tertiary-border-default: color(#8284bb a(30%));
+  --color-link-view-tertiary-border-default: rgba(130, 132, 187, 0.30);
   --color-link-view-tertiary-typo-disable: #cccccc;
   --color-link-view-tertiary-typo-visit: #a3a5c4;
   --color-link-view-tertiary-typo-focus: #8284bb;
   --color-link-view-tertiary-typo-hover: #8284bb;
   --color-link-view-tertiary-typo-default: #8284bb;
-  --color-link-view-second-border-disable: color(#cccccc a(30%));
+  --color-link-view-second-border-disable: rgba(204, 204, 204, 0.30);
   --color-link-view-second-border-focus: #818eff;
-  --color-link-view-second-border-visit: color(#707070 a(30%));
+  --color-link-view-second-border-visit: rgba(112, 112, 112, 0.30);
   --color-link-view-second-border-hover: #3139e9;
-  --color-link-view-second-border-default: color(#333333 a(30%));
+  --color-link-view-second-border-default: rgba(51, 51, 51, 0.30);
   --color-link-view-second-typo-disable: #cccccc;
   --color-link-view-second-typo-visit: #6f6f6f;
   --color-link-view-second-typo-hover: #3138e8;
   --color-link-view-second-typo-focus: #333333;
   --color-link-view-second-typo-default: #333333;
   --color-link-view-main-border-focus: #818eff;
-  --color-link-view-main-border-disable: color(#cccccc a(30%));
-  --color-link-view-main-border-visit: color(#6167ec a(30%));
+  --color-link-view-main-border-disable: rgba(204, 204, 204, 0.30);
+  --color-link-view-main-border-visit: rgba(97, 103, 236, 0.30);
   --color-link-view-main-border-hover: #3139e9;
-  --color-link-view-main-border-default: color(#3139e9 a(30%));
+  --color-link-view-main-border-default: rgba(49, 57, 233, 0.30);
   --color-link-view-main-typo-disable: #cccccc;
   --color-link-view-main-typo-visit: #6166eb;
   --color-link-view-main-typo-focus: #3138e8;
@@ -76,5 +76,5 @@
   --color-content-ghost: #888888;
   --color-content-title: #222222;
   --color-content-base: #333333;
-  --effect-shadow-button-view-main-second-border-focus: 0px 0px 0px 1px color(#751222 a(80%));
+  --effect-shadow-button-view-main-second-border-focus: 0px 0px 0px 1px rgba(117, 18, 34, 0.80);
 }
