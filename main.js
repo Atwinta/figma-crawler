@@ -11,7 +11,7 @@ async function main() {
 	const data = await getStylesArtboard(config);
 	const output = config.output;
 
-	config.clear && fs.existsSync(output) && fs.rmdirSync(output, { recursive: true });
+	config.clear && fs.existsSync(output) && fs.rmSync(output, { recursive: true });
 
 	for (const category in data) {
 		const token = data[category];
