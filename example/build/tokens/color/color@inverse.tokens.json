@@ -1,10 +1,6 @@
 {
   "color": {
     "content": {
-      "inverse": {
-        "value": "#333333",
-        "group": "color"
-      },
       "base": {
         "value": "#ffffff",
         "group": "color"
@@ -16,51 +12,59 @@
       "ghost": {
         "value": "#a9afcb",
         "group": "color"
+      },
+      "inverse": {
+        "value": "#333333",
+        "group": "color"
       }
     },
     "link": {
       "view": {
-        "text": {
+        "second": {
           "typo": {
-            "base": {
+            "default": {
               "value": "#ffffff",
               "group": "color"
             },
-            "hovered": {
+            "hover": {
               "value": "#ffffff",
               "group": "color"
             },
-            "visited": {
+            "focus": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "visit": {
               "value": "#dfdede",
+              "group": "color"
+            },
+            "disable": {
+              "value": "#a4a4a4",
               "group": "color"
             }
           },
           "border": {
-            "base": {
+            "default": {
               "value": "color(#ffffff a(30%))",
               "group": "color"
             },
-            "hovered": {
+            "hover": {
               "value": "#ffffff",
               "group": "color"
             },
-            "visited": {
+            "visit": {
               "value": "color(#dfdede a(30%))",
+              "group": "color"
+            },
+            "disable": {
+              "value": "color(#a5a5a5 a(30%))",
+              "group": "color"
+            },
+            "focus": {
+              "value": "#818eff",
               "group": "color"
             }
           }
-        }
-      },
-      "typo": {
-        "disabled": {
-          "value": "#a4a4a4",
-          "group": "color"
-        }
-      },
-      "border": {
-        "disabled": {
-          "value": "color(#a5a5a5 a(30%))",
-          "group": "color"
         }
       }
     }
