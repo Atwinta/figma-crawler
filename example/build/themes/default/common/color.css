@@ -76,5 +76,6 @@
   --color-content-ghost: #888888;
   --color-content-title: #222222;
   --color-content-base: #333333;
-  --effect-shadow-button-view-main-second-border-focus: 0px 0px 0px 1px rgba(117, 18, 34, 0.80);
+  --effect-shadow-button-view-second-border-focus: 0px 0px 0px 1px rgba(117, 18, 34, 0.80);
+  --effect-shadow-button-view-main-border-focus: 0px 0px 0px 1px rgba(117, 18, 34, 0.80);
 }
