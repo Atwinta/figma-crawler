@@ -1,0 +1,22 @@
+{
+  "typography": {
+    "body": {
+      "fontFamily": {
+        "value": "'Fira Sans', sans-serif",
+        "group": "typography"
+      }
+    },
+    "headline": {
+      "fontFamily": {
+        "value": "'Fira Sans', sans-serif",
+        "group": "typography"
+      }
+    },
+    "controls": {
+      "fontFamily": {
+        "value": "'Fira Sans', sans-serif",
+        "group": "typography"
+      }
+    }
+  }
+}
