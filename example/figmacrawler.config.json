@@ -3,5 +3,6 @@
   "output": "./build/tokens",
   "platformsMode": "join",
 	"colorFormat": "css",
+  "colorTailwind": true,
   "clear": true
 }

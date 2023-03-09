@@ -5,28 +5,56 @@
         "value": "#333333",
         "group": "color"
       },
+      "base-tailwind": {
+        "value": "51 51 51",
+        "group": "color"
+      },
       "title": {
         "value": "#222222",
+        "group": "color"
+      },
+      "title-tailwind": {
+        "value": "34 34 34",
         "group": "color"
       },
       "ghost": {
         "value": "#888888",
         "group": "color"
       },
+      "ghost-tailwind": {
+        "value": "136 136 136",
+        "group": "color"
+      },
       "inverse": {
         "value": "#ffffff",
+        "group": "color"
+      },
+      "inverse-tailwind": {
+        "value": "255 255 255",
         "group": "color"
       },
       "brand-primary": {
         "value": "#751222",
         "group": "color"
       },
+      "brand-primary-tailwind": {
+        "value": "117 18 34",
+        "group": "color"
+      },
       "brand-secondary": {
         "value": "#11752d",
         "group": "color"
       },
+      "brand-secondary-tailwind": {
+        "value": "17 117 45",
+        "group": "color"
+      },
       "error": {
         "value": "#c0344b",
+        "group": "color"
+      },
+      "error-tailwind": {
+        "value": "192 52 75",
         "group": "color"
       }
     },
@@ -38,20 +66,40 @@
               "value": "#3138e8",
               "group": "color"
             },
+            "default-tailwind": {
+              "value": "49 56 232",
+              "group": "color"
+            },
             "hover": {
               "value": "#3138e8",
+              "group": "color"
+            },
+            "hover-tailwind": {
+              "value": "49 56 232",
               "group": "color"
             },
             "focus": {
               "value": "#3138e8",
               "group": "color"
             },
+            "focus-tailwind": {
+              "value": "49 56 232",
+              "group": "color"
+            },
             "visit": {
               "value": "#6166eb",
               "group": "color"
             },
+            "visit-tailwind": {
+              "value": "97 102 235",
+              "group": "color"
+            },
             "disable": {
               "value": "#cccccc",
+              "group": "color"
+            },
+            "disable-tailwind": {
+              "value": "204 204 204",
               "group": "color"
             }
           },
@@ -62,6 +110,10 @@
             },
             "hover": {
               "value": "#3139e9",
+              "group": "color"
+            },
+            "hover-tailwind": {
+              "value": "49 57 233",
               "group": "color"
             },
             "visit": {
@@ -75,6 +127,10 @@
             "focus": {
               "value": "#818eff",
               "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "129 142 255",
+              "group": "color"
             }
           }
         },
@@ -84,20 +140,40 @@
               "value": "#333333",
               "group": "color"
             },
+            "default-tailwind": {
+              "value": "51 51 51",
+              "group": "color"
+            },
             "focus": {
               "value": "#333333",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "51 51 51",
               "group": "color"
             },
             "hover": {
               "value": "#3138e8",
               "group": "color"
             },
+            "hover-tailwind": {
+              "value": "49 56 232",
+              "group": "color"
+            },
             "visit": {
               "value": "#6f6f6f",
               "group": "color"
             },
+            "visit-tailwind": {
+              "value": "111 111 111",
+              "group": "color"
+            },
             "disable": {
               "value": "#cccccc",
+              "group": "color"
+            },
+            "disable-tailwind": {
+              "value": "204 204 204",
               "group": "color"
             }
           },
@@ -110,12 +186,20 @@
               "value": "#3139e9",
               "group": "color"
             },
+            "hover-tailwind": {
+              "value": "49 57 233",
+              "group": "color"
+            },
             "visit": {
               "value": "rgba(112, 112, 112, 0.30)",
               "group": "color"
             },
             "focus": {
               "value": "#818eff",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "129 142 255",
               "group": "color"
             },
             "disable": {
@@ -130,20 +214,40 @@
               "value": "#8284bb",
               "group": "color"
             },
+            "default-tailwind": {
+              "value": "130 132 187",
+              "group": "color"
+            },
             "hover": {
               "value": "#8284bb",
+              "group": "color"
+            },
+            "hover-tailwind": {
+              "value": "130 132 187",
               "group": "color"
             },
             "focus": {
               "value": "#8284bb",
               "group": "color"
             },
+            "focus-tailwind": {
+              "value": "130 132 187",
+              "group": "color"
+            },
             "visit": {
               "value": "#a3a5c4",
               "group": "color"
             },
+            "visit-tailwind": {
+              "value": "163 165 196",
+              "group": "color"
+            },
             "disable": {
               "value": "#cccccc",
+              "group": "color"
+            },
+            "disable-tailwind": {
+              "value": "204 204 204",
               "group": "color"
             }
           },
@@ -156,12 +260,20 @@
               "value": "#8284bb",
               "group": "color"
             },
+            "hover-tailwind": {
+              "value": "130 132 187",
+              "group": "color"
+            },
             "visit": {
               "value": "rgba(163, 165, 196, 0.30)",
               "group": "color"
             },
             "focus": {
               "value": "#818eff",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "129 142 255",
               "group": "color"
             },
             "disable": {
@@ -180,20 +292,40 @@
               "value": "#751222",
               "group": "color"
             },
+            "deafult-tailwind": {
+              "value": "117 18 34",
+              "group": "color"
+            },
             "focus": {
               "value": "#751222",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "117 18 34",
               "group": "color"
             },
             "hover": {
               "value": "#97162b",
               "group": "color"
             },
+            "hover-tailwind": {
+              "value": "151 22 43",
+              "group": "color"
+            },
             "disable": {
               "value": "#d6d6d6",
               "group": "color"
             },
+            "disable-tailwind": {
+              "value": "214 214 214",
+              "group": "color"
+            },
             "press": {
               "value": "#620d1b",
+              "group": "color"
+            },
+            "press-tailwind": {
+              "value": "98 13 27",
               "group": "color"
             }
           },
@@ -202,20 +334,40 @@
               "value": "#ffffff",
               "group": "color"
             },
+            "default-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
             "hover": {
               "value": "#ffffff",
+              "group": "color"
+            },
+            "hover-tailwind": {
+              "value": "255 255 255",
               "group": "color"
             },
             "focus": {
               "value": "#ffffff",
               "group": "color"
             },
+            "focus-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
             "press": {
               "value": "#ffffff",
               "group": "color"
             },
+            "press-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
             "disable": {
               "value": "#9a9a9a",
+              "group": "color"
+            },
+            "disable-tailwind": {
+              "value": "154 154 154",
               "group": "color"
             }
           },
@@ -224,16 +376,32 @@
               "value": "#ffffff",
               "group": "color"
             },
+            "default-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
             "hover": {
               "value": "#ffffff",
+              "group": "color"
+            },
+            "hover-tailwind": {
+              "value": "255 255 255",
               "group": "color"
             },
             "focus": {
               "value": "#ffffff",
               "group": "color"
             },
+            "focus-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
             "press": {
               "value": "#ffffff",
+              "group": "color"
+            },
+            "press-tailwind": {
+              "value": "255 255 255",
               "group": "color"
             },
             "disable": {
@@ -248,20 +416,40 @@
               "value": "#000000",
               "group": "color"
             },
+            "default-tailwind": {
+              "value": "0 0 0",
+              "group": "color"
+            },
             "hover": {
               "value": "#000000",
+              "group": "color"
+            },
+            "hover-tailwind": {
+              "value": "0 0 0",
               "group": "color"
             },
             "focus": {
               "value": "#000000",
               "group": "color"
             },
+            "focus-tailwind": {
+              "value": "0 0 0",
+              "group": "color"
+            },
             "press": {
               "value": "#000000",
               "group": "color"
             },
+            "press-tailwind": {
+              "value": "0 0 0",
+              "group": "color"
+            },
             "disable": {
               "value": "#999999",
+              "group": "color"
+            },
+            "disable-tailwind": {
+              "value": "153 153 153",
               "group": "color"
             }
           },
@@ -270,20 +458,40 @@
               "value": "#cccccc",
               "group": "color"
             },
+            "default-tailwind": {
+              "value": "204 204 204",
+              "group": "color"
+            },
             "focus": {
               "value": "#cccccc",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "204 204 204",
               "group": "color"
             },
             "disable": {
               "value": "#cccccc",
               "group": "color"
             },
+            "disable-tailwind": {
+              "value": "204 204 204",
+              "group": "color"
+            },
             "hover": {
               "value": "#aeaeae",
               "group": "color"
             },
+            "hover-tailwind": {
+              "value": "174 174 174",
+              "group": "color"
+            },
             "press": {
               "value": "#aeaeae",
+              "group": "color"
+            },
+            "press-tailwind": {
+              "value": "174 174 174",
               "group": "color"
             }
           },
@@ -292,20 +500,40 @@
               "value": "#ffffff",
               "group": "color"
             },
+            "default-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
             "hover": {
               "value": "#ffffff",
+              "group": "color"
+            },
+            "hover-tailwind": {
+              "value": "255 255 255",
               "group": "color"
             },
             "focus": {
               "value": "#ffffff",
               "group": "color"
             },
+            "focus-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
             "disable": {
               "value": "#ececec",
               "group": "color"
             },
+            "disable-tailwind": {
+              "value": "236 236 236",
+              "group": "color"
+            },
             "press": {
               "value": "#f8f6f6",
+              "group": "color"
+            },
+            "press-tailwind": {
+              "value": "248 246 246",
               "group": "color"
             }
           },

@@ -66,6 +66,7 @@
   "clear": false,
   "type": "files",
   "colorFormat": "css",
+  "colorTailwind": false,
   "platformsMode": "split",
   "platformsOrder": [
     "desktop-large",
@@ -116,6 +117,20 @@
       <td>String<'css' | 'postcss'></td>
       <td>Формат цвета</td>
       <td>css</td>
+    </tr>
+    <tr>
+      <td>colorTailwind</td>
+      <td>Boolean</td>
+      <td>
+        Добавить значения цветов (только для тех, что без альфа-канала) в формате только rgb только с цветовыми каналами для <a href="https://tailwindcss.com/docs/customizing-colors#using-css-variables" target="_blank">Tailwindcss</a>.
+        Будут созданы с суффиксом <code>-tailwind</code>.<br>
+        Пример:<br>
+        <code>
+          color.content.base = { "value": "#333333", "group": "color" }
+          color.content.base-tailwind = { "value": "51 51 51", "group": "color" }
+        </code>
+      </td>
+      <td>false</td>
     </tr>
     <tr>
       <td>platformsMode</td>

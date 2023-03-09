@@ -5,16 +5,32 @@
         "value": "#ffffff",
         "group": "color"
       },
+      "base-tailwind": {
+        "value": "255 255 255",
+        "group": "color"
+      },
       "title": {
         "value": "#ffffff",
+        "group": "color"
+      },
+      "title-tailwind": {
+        "value": "255 255 255",
         "group": "color"
       },
       "ghost": {
         "value": "#a9afcb",
         "group": "color"
       },
+      "ghost-tailwind": {
+        "value": "169 175 203",
+        "group": "color"
+      },
       "inverse": {
         "value": "#333333",
+        "group": "color"
+      },
+      "inverse-tailwind": {
+        "value": "51 51 51",
         "group": "color"
       }
     },
@@ -26,20 +42,40 @@
               "value": "#ffffff",
               "group": "color"
             },
+            "default-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
             "hover": {
               "value": "#ffffff",
+              "group": "color"
+            },
+            "hover-tailwind": {
+              "value": "255 255 255",
               "group": "color"
             },
             "focus": {
               "value": "#ffffff",
               "group": "color"
             },
+            "focus-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
             "visit": {
               "value": "#dfdede",
               "group": "color"
             },
+            "visit-tailwind": {
+              "value": "223 222 222",
+              "group": "color"
+            },
             "disable": {
               "value": "#a4a4a4",
+              "group": "color"
+            },
+            "disable-tailwind": {
+              "value": "164 164 164",
               "group": "color"
             }
           },
@@ -52,6 +88,10 @@
               "value": "#ffffff",
               "group": "color"
             },
+            "hover-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
             "visit": {
               "value": "rgba(223, 222, 222, 0.30)",
               "group": "color"
@@ -62,6 +102,10 @@
             },
             "focus": {
               "value": "#818eff",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "129 142 255",
               "group": "color"
             }
           }
