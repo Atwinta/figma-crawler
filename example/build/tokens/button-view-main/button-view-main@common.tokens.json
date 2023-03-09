@@ -1,0 +1,7 @@
+{
+  "button-view-main": {
+    "fontFamily": {
+      "value": "{typography.controls.fontFamily.value}"
+    }
+  }
+}

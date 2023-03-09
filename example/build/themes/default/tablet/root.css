@@ -4,6 +4,44 @@
  */
 
 .theme_root_default {
+  --grid-offset: 32px;
+  --grid-gutter: 16px;
+  --button-view-second-size-s-icon-height: 8px;
+  --button-view-second-size-s-icon-width: 8px;
+  --button-view-second-size-s-padding-right: 6px;
+  --button-view-second-size-s-padding-left: 6px;
+  --button-view-second-size-s-padding-bottom: 3px;
+  --button-view-second-size-s-padding-top: 3px;
+  --button-view-second-size-s-gap: 3;
+  --button-view-second-size-s-border-width: 1px;
+  --button-view-second-size-s-border-radius: 4;
+  --button-view-second-size-m-icon-height: 9px;
+  --button-view-second-size-m-icon-width: 9px;
+  --button-view-second-size-m-padding-right: 10px;
+  --button-view-second-size-m-padding-left: 10px;
+  --button-view-second-size-m-padding-bottom: 4px;
+  --button-view-second-size-m-padding-top: 4px;
+  --button-view-second-size-m-gap: 4;
+  --button-view-second-size-m-border-width: 1px;
+  --button-view-second-size-m-border-radius: 4;
+  --button-view-main-size-s-icon-height: 8px;
+  --button-view-main-size-s-icon-width: 8px;
+  --button-view-main-size-s-padding-right: 6px;
+  --button-view-main-size-s-padding-left: 6px;
+  --button-view-main-size-s-padding-bottom: 3px;
+  --button-view-main-size-s-padding-top: 3px;
+  --button-view-main-size-s-gap: 3;
+  --button-view-main-size-s-border-width: 0;
+  --button-view-main-size-s-border-radius: 4;
+  --button-view-main-size-m-icon-height: 9px;
+  --button-view-main-size-m-icon-width: 9px;
+  --button-view-main-size-m-padding-right: 10px;
+  --button-view-main-size-m-padding-left: 10px;
+  --button-view-main-size-m-padding-bottom: 4px;
+  --button-view-main-size-m-padding-top: 4px;
+  --button-view-main-size-m-gap: 4;
+  --button-view-main-size-m-border-width: 0;
+  --button-view-main-size-m-border-radius: 4;
   --text-heading-s-line-height: 1.33;
   --text-heading-s-font-size: 24px;
   --text-heading-m-line-height: 1.22;
@@ -16,6 +54,16 @@
   --text-heading-xxl-font-size: 52px;
   --text-display-xl-line-height: 1.15;
   --text-display-xl-font-size: 52px;
-  --grid-offset: 32px;
-  --grid-gutter: 16px;
+  --button-view-second-size-s-letter-spacing: var(--text-control-s-letter-spacing);
+  --button-view-second-size-s-line-height: var(--text-control-s-line-height);
+  --button-view-second-size-s-font-size: var(--text-control-s-font-size);
+  --button-view-second-size-m-letter-spacing: var(--text-control-m-letter-spacing);
+  --button-view-second-size-m-line-height: var(--text-control-m-line-height);
+  --button-view-second-size-m-font-size: var(--text-control-m-font-size);
+  --button-view-main-size-s-letter-spacing: var(--text-control-s-letter-spacing);
+  --button-view-main-size-s-line-height: var(--text-control-s-line-height);
+  --button-view-main-size-s-font-size: var(--text-control-s-font-size);
+  --button-view-main-size-m-letter-spacing: var(--text-control-m-letter-spacing);
+  --button-view-main-size-m-line-height: var(--text-control-m-line-height);
+  --button-view-main-size-m-font-size: var(--text-control-m-font-size);
 }

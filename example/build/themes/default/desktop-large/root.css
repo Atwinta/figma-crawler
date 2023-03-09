@@ -4,6 +4,7 @@
  */
 
 .theme_root_default {
+  --grid-offset: 40px;
   --text-heading-xs-line-height: 1.33;
   --text-heading-xs-font-size: 24px;
   --text-heading-s-line-height: 1.25;
@@ -18,5 +19,4 @@
   --text-heading-xxl-font-size: 72px;
   --text-display-xl-line-height: 1.11;
   --text-display-xl-font-size: 72px;
-  --grid-offset: 40px;
 }

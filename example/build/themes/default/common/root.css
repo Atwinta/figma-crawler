@@ -7,4 +7,6 @@
   --typography-controls-font-family: 'Fira Sans', sans-serif;
   --typography-heading-font-family: 'Fira Sans', sans-serif;
   --typography-body-font-family: 'Fira Sans', sans-serif;
+  --button-view-second-font-family: var(--typography-controls-font-family);
+  --button-view-main-font-family: var(--typography-controls-font-family);
 }

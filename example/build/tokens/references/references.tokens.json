@@ -1,0 +1,32 @@
+{
+  "text": {
+    "control-m": {
+      "fontSize": {
+        "value": "unset",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "unset",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "unset",
+        "group": "typography"
+      }
+    },
+    "control-s": {
+      "fontSize": {
+        "value": "unset",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "unset",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "unset",
+        "group": "typography"
+      }
+    }
+  }
+}
