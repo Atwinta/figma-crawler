@@ -8,6 +8,7 @@
 	},
 	"dependencies": {
 		"axios": "0.27.2",
+		"d-forest": "3.2.4",
 		"deep-diff": "1.0.2",
 		"dotenv": "9.0.2",
 		"lodash": "4.17.21",
