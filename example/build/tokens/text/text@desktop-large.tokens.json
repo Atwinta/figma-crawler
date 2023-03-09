@@ -1,15 +1,5 @@
 {
   "text": {
-    "heading-l": {
-      "fontSize": {
-        "value": "56px",
-        "group": "typography"
-      },
-      "lineHeight": {
-        "value": "1.14",
-        "group": "typography"
-      }
-    },
     "display-xl": {
       "fontSize": {
         "value": "72px",
@@ -37,6 +27,16 @@
       },
       "lineHeight": {
         "value": "1.13",
+        "group": "typography"
+      }
+    },
+    "heading-l": {
+      "fontSize": {
+        "value": "56px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.14",
         "group": "typography"
       }
     },

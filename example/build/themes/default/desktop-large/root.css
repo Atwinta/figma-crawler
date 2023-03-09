@@ -10,13 +10,13 @@
   --text-heading-s-font-size: 32px;
   --text-heading-m-line-height: 1.18;
   --text-heading-m-font-size: 44px;
+  --text-heading-l-line-height: 1.14;
+  --text-heading-l-font-size: 56px;
   --text-heading-xl-line-height: 1.13;
   --text-heading-xl-font-size: 64px;
   --text-heading-xxl-line-height: 1.11;
   --text-heading-xxl-font-size: 72px;
   --text-display-xl-line-height: 1.11;
   --text-display-xl-font-size: 72px;
-  --text-heading-l-line-height: 1.14;
-  --text-heading-l-font-size: 56px;
   --grid-offset: 40px;
 }
