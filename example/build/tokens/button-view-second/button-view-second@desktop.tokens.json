@@ -14,18 +14,6 @@
           "value": 5,
           "group": "size"
         },
-        "fontSize": {
-          "value": "{text.control-m.fontSize.value}",
-          "group": "typography"
-        },
-        "lineHeight": {
-          "value": "{text.control-m.lineHeight.value}",
-          "group": "typography"
-        },
-        "letterSpacing": {
-          "value": "{text.control-m.letterSpacing.value}",
-          "group": "typography"
-        },
         "paddingTop": {
           "value": "6px",
           "group": "size"
@@ -41,6 +29,18 @@
         "paddingRight": {
           "value": "12px",
           "group": "size"
+        },
+        "fontSize": {
+          "value": "{text.control-m.fontSize.value}",
+          "group": "typography"
+        },
+        "lineHeight": {
+          "value": "{text.control-m.lineHeight.value}",
+          "group": "typography"
+        },
+        "letterSpacing": {
+          "value": "{text.control-m.letterSpacing.value}",
+          "group": "typography"
         },
         "icon": {
           "width": {
@@ -66,18 +66,6 @@
           "value": 4,
           "group": "size"
         },
-        "fontSize": {
-          "value": "{text.control-s.fontSize.value}",
-          "group": "typography"
-        },
-        "lineHeight": {
-          "value": "{text.control-s.lineHeight.value}",
-          "group": "typography"
-        },
-        "letterSpacing": {
-          "value": "{text.control-s.letterSpacing.value}",
-          "group": "typography"
-        },
         "paddingTop": {
           "value": "4px",
           "group": "size"
@@ -93,6 +81,18 @@
         "paddingRight": {
           "value": "8px",
           "group": "size"
+        },
+        "fontSize": {
+          "value": "{text.control-s.fontSize.value}",
+          "group": "typography"
+        },
+        "lineHeight": {
+          "value": "{text.control-s.lineHeight.value}",
+          "group": "typography"
+        },
+        "letterSpacing": {
+          "value": "{text.control-s.letterSpacing.value}",
+          "group": "typography"
         },
         "icon": {
           "width": {
