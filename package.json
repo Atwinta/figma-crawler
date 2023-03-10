@@ -1,12 +1,12 @@
 {
 	"name": "@atwinta/figma-crawler",
-	"version": "0.5.2",
+	"version": "0.6.0",
 	"description": "",
 	"license": "MIT",
 	"repository": {
-    "type": "git",
-    "url": "https://github.com/Atwinta/figma-crawler"
-  },
+		"type": "git",
+		"url": "https://github.com/Atwinta/figma-crawler"
+	},
 	"dependencies": {
 		"axios": "0.27.2",
 		"d-forest": "3.2.4",
@@ -16,6 +16,6 @@
 		"minimist": "1.2.6"
 	},
 	"publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+		"registry": "https://npm.pkg.github.com"
+	}
 }
