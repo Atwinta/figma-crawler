@@ -5,266 +5,560 @@
         "value": "#333333",
         "group": "color"
       },
+      "base-tailwind": {
+        "value": "51 51 51",
+        "group": "color"
+      },
       "title": {
         "value": "#222222",
         "group": "color"
       },
-      "brand-primary": {
-        "value": "#751222",
-        "group": "color"
-      },
-      "error": {
-        "value": "#c0344b",
-        "group": "color"
-      },
-      "brand-secondary": {
-        "value": "#11752d",
+      "title-tailwind": {
+        "value": "34 34 34",
         "group": "color"
       },
       "ghost": {
         "value": "#888888",
         "group": "color"
       },
+      "ghost-tailwind": {
+        "value": "136 136 136",
+        "group": "color"
+      },
       "inverse": {
         "value": "#ffffff",
         "group": "color"
-      }
-    },
-    "control": {
-      "view": {
-        "default": {
-          "fill": {
-            "base": {
-              "value": "#ffffff",
-              "group": "color"
-            },
-            "disabled": {
-              "value": "#ececec",
-              "group": "color"
-            },
-            "hovered": {
-              "value": "#ffffff",
-              "group": "color"
-            },
-            "pressed": {
-              "value": "#f8f6f6",
-              "group": "color"
-            }
-          },
-          "typo": {
-            "base": {
-              "value": "#000000",
-              "group": "color"
-            },
-            "disabled": {
-              "value": "#999999",
-              "group": "color"
-            },
-            "hovered": {
-              "value": "#000000",
-              "group": "color"
-            },
-            "pressed": {
-              "value": "#000000",
-              "group": "color"
-            },
-            "focused": {
-              "value": "#000000",
-              "group": "color"
-            }
-          },
-          "border": {
-            "base": {
-              "value": "#cccccc",
-              "group": "color"
-            },
-            "disabled": {
-              "value": "#cccccc",
-              "group": "color"
-            },
-            "focused": {
-              "value": "#cccccc",
-              "group": "color"
-            },
-            "hovered": {
-              "value": "#aeaeae",
-              "group": "color"
-            },
-            "pressed": {
-              "value": "#aeaeae",
-              "group": "color"
-            }
-          }
-        },
-        "action": {
-          "fill": {
-            "base": {
-              "value": "#751222",
-              "group": "color"
-            },
-            "disabled": {
-              "value": "#d6d6d6",
-              "group": "color"
-            },
-            "hovered": {
-              "value": "#97162b",
-              "group": "color"
-            },
-            "pressed": {
-              "value": "#610d1a",
-              "group": "color"
-            }
-          },
-          "typo": {
-            "base": {
-              "value": "#ffffff",
-              "group": "color"
-            },
-            "disabled": {
-              "value": "#9a9a9a",
-              "group": "color"
-            },
-            "hovered": {
-              "value": "#ffffff",
-              "group": "color"
-            },
-            "pressed": {
-              "value": "#ffffff",
-              "group": "color"
-            },
-            "focused": {
-              "value": "#ffffff",
-              "group": "color"
-            }
-          },
-          "border": {
-            "base": {
-              "value": "color(#ffffff a(0%))",
-              "group": "color"
-            },
-            "disabled": {
-              "value": "color(#ffffff a(0%))",
-              "group": "color"
-            },
-            "hovered": {
-              "value": "color(#ffffff a(0%))",
-              "group": "color"
-            },
-            "pressed": {
-              "value": "color(#ffffff a(0%))",
-              "group": "color"
-            }
-          }
-        }
+      },
+      "inverse-tailwind": {
+        "value": "255 255 255",
+        "group": "color"
+      },
+      "brand-primary": {
+        "value": "#751222",
+        "group": "color"
+      },
+      "brand-primary-tailwind": {
+        "value": "117 18 34",
+        "group": "color"
+      },
+      "brand-secondary": {
+        "value": "#11752d",
+        "group": "color"
+      },
+      "brand-secondary-tailwind": {
+        "value": "17 117 45",
+        "group": "color"
+      },
+      "error": {
+        "value": "#c0344b",
+        "group": "color"
+      },
+      "error-tailwind": {
+        "value": "192 52 75",
+        "group": "color"
       }
     },
     "link": {
       "view": {
-        "default": {
+        "main": {
           "typo": {
-            "base": {
+            "default": {
               "value": "#3138e8",
               "group": "color"
             },
-            "hovered": {
+            "default-tailwind": {
+              "value": "49 56 232",
+              "group": "color"
+            },
+            "hover": {
               "value": "#3138e8",
               "group": "color"
             },
-            "visited": {
+            "hover-tailwind": {
+              "value": "49 56 232",
+              "group": "color"
+            },
+            "focus": {
+              "value": "#3138e8",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "49 56 232",
+              "group": "color"
+            },
+            "visit": {
               "value": "#6166eb",
+              "group": "color"
+            },
+            "visit-tailwind": {
+              "value": "97 102 235",
+              "group": "color"
+            },
+            "disable": {
+              "value": "#cccccc",
+              "group": "color"
+            },
+            "disable-tailwind": {
+              "value": "204 204 204",
               "group": "color"
             }
           },
           "border": {
-            "base": {
-              "value": "color(#3139e9 a(30%))",
+            "default": {
+              "value": "rgba(49, 57, 233, 0.30)",
               "group": "color"
             },
-            "hovered": {
+            "hover": {
               "value": "#3139e9",
               "group": "color"
             },
-            "visited": {
-              "value": "color(#6167ec a(30%))",
+            "hover-tailwind": {
+              "value": "49 57 233",
+              "group": "color"
+            },
+            "visit": {
+              "value": "rgba(97, 103, 236, 0.30)",
+              "group": "color"
+            },
+            "disable": {
+              "value": "rgba(204, 204, 204, 0.30)",
+              "group": "color"
+            },
+            "focus": {
+              "value": "#818eff",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "129 142 255",
               "group": "color"
             }
           }
         },
-        "text": {
+        "second": {
           "typo": {
-            "base": {
+            "default": {
               "value": "#333333",
               "group": "color"
             },
-            "hovered": {
+            "default-tailwind": {
+              "value": "51 51 51",
+              "group": "color"
+            },
+            "focus": {
+              "value": "#333333",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "51 51 51",
+              "group": "color"
+            },
+            "hover": {
               "value": "#3138e8",
               "group": "color"
             },
-            "visited": {
+            "hover-tailwind": {
+              "value": "49 56 232",
+              "group": "color"
+            },
+            "visit": {
               "value": "#6f6f6f",
+              "group": "color"
+            },
+            "visit-tailwind": {
+              "value": "111 111 111",
+              "group": "color"
+            },
+            "disable": {
+              "value": "#cccccc",
+              "group": "color"
+            },
+            "disable-tailwind": {
+              "value": "204 204 204",
               "group": "color"
             }
           },
           "border": {
-            "base": {
-              "value": "color(#333333 a(30%))",
+            "default": {
+              "value": "rgba(51, 51, 51, 0.30)",
               "group": "color"
             },
-            "hovered": {
+            "hover": {
               "value": "#3139e9",
               "group": "color"
             },
-            "visited": {
-              "value": "color(#707070 a(30%))",
+            "hover-tailwind": {
+              "value": "49 57 233",
+              "group": "color"
+            },
+            "visit": {
+              "value": "rgba(112, 112, 112, 0.30)",
+              "group": "color"
+            },
+            "focus": {
+              "value": "#818eff",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "129 142 255",
+              "group": "color"
+            },
+            "disable": {
+              "value": "rgba(204, 204, 204, 0.30)",
               "group": "color"
             }
           }
         },
-        "minor": {
+        "tertiary": {
           "typo": {
-            "base": {
+            "default": {
               "value": "#8284bb",
               "group": "color"
             },
-            "hovered": {
+            "default-tailwind": {
+              "value": "130 132 187",
+              "group": "color"
+            },
+            "hover": {
               "value": "#8284bb",
               "group": "color"
             },
-            "visited": {
+            "hover-tailwind": {
+              "value": "130 132 187",
+              "group": "color"
+            },
+            "focus": {
+              "value": "#8284bb",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "130 132 187",
+              "group": "color"
+            },
+            "visit": {
               "value": "#a3a5c4",
+              "group": "color"
+            },
+            "visit-tailwind": {
+              "value": "163 165 196",
+              "group": "color"
+            },
+            "disable": {
+              "value": "#cccccc",
+              "group": "color"
+            },
+            "disable-tailwind": {
+              "value": "204 204 204",
               "group": "color"
             }
           },
           "border": {
-            "base": {
-              "value": "color(#8284bb a(30%))",
+            "default": {
+              "value": "rgba(130, 132, 187, 0.30)",
               "group": "color"
             },
-            "hovered": {
+            "hover": {
               "value": "#8284bb",
               "group": "color"
             },
-            "visited": {
-              "value": "color(#a3a5c4 a(30%))",
+            "hover-tailwind": {
+              "value": "130 132 187",
+              "group": "color"
+            },
+            "visit": {
+              "value": "rgba(163, 165, 196, 0.30)",
+              "group": "color"
+            },
+            "focus": {
+              "value": "#818eff",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "129 142 255",
+              "group": "color"
+            },
+            "disable": {
+              "value": "rgba(204, 204, 204, 0.30)",
               "group": "color"
             }
           }
         }
-      },
-      "typo": {
-        "disabled": {
-          "value": "#cccccc",
-          "group": "color"
-        }
-      },
-      "border": {
-        "disabled": {
-          "value": "color(#cccccc a(30%))",
-          "group": "color"
+      }
+    },
+    "button": {
+      "view": {
+        "main": {
+          "fill": {
+            "deafult": {
+              "value": "#751222",
+              "group": "color"
+            },
+            "deafult-tailwind": {
+              "value": "117 18 34",
+              "group": "color"
+            },
+            "focus": {
+              "value": "#751222",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "117 18 34",
+              "group": "color"
+            },
+            "hover": {
+              "value": "#97162b",
+              "group": "color"
+            },
+            "hover-tailwind": {
+              "value": "151 22 43",
+              "group": "color"
+            },
+            "disable": {
+              "value": "#d6d6d6",
+              "group": "color"
+            },
+            "disable-tailwind": {
+              "value": "214 214 214",
+              "group": "color"
+            },
+            "press": {
+              "value": "#620d1b",
+              "group": "color"
+            },
+            "press-tailwind": {
+              "value": "98 13 27",
+              "group": "color"
+            }
+          },
+          "typo": {
+            "default": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "default-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
+            "hover": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "hover-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
+            "focus": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
+            "press": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "press-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
+            "disable": {
+              "value": "#9a9a9a",
+              "group": "color"
+            },
+            "disable-tailwind": {
+              "value": "154 154 154",
+              "group": "color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "default-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
+            "hover": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "hover-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
+            "focus": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
+            "press": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "press-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
+            "disable": {
+              "value": "rgba(154, 154, 154, 0.50)",
+              "group": "color"
+            }
+          }
         },
-        "focused": {
-          "value": "#818eff",
-          "group": "color"
+        "second": {
+          "typo": {
+            "default": {
+              "value": "#000000",
+              "group": "color"
+            },
+            "default-tailwind": {
+              "value": "0 0 0",
+              "group": "color"
+            },
+            "hover": {
+              "value": "#000000",
+              "group": "color"
+            },
+            "hover-tailwind": {
+              "value": "0 0 0",
+              "group": "color"
+            },
+            "focus": {
+              "value": "#000000",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "0 0 0",
+              "group": "color"
+            },
+            "press": {
+              "value": "#000000",
+              "group": "color"
+            },
+            "press-tailwind": {
+              "value": "0 0 0",
+              "group": "color"
+            },
+            "disable": {
+              "value": "#999999",
+              "group": "color"
+            },
+            "disable-tailwind": {
+              "value": "153 153 153",
+              "group": "color"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "#cccccc",
+              "group": "color"
+            },
+            "default-tailwind": {
+              "value": "204 204 204",
+              "group": "color"
+            },
+            "focus": {
+              "value": "#cccccc",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "204 204 204",
+              "group": "color"
+            },
+            "disable": {
+              "value": "#cccccc",
+              "group": "color"
+            },
+            "disable-tailwind": {
+              "value": "204 204 204",
+              "group": "color"
+            },
+            "hover": {
+              "value": "#aeaeae",
+              "group": "color"
+            },
+            "hover-tailwind": {
+              "value": "174 174 174",
+              "group": "color"
+            },
+            "press": {
+              "value": "#aeaeae",
+              "group": "color"
+            },
+            "press-tailwind": {
+              "value": "174 174 174",
+              "group": "color"
+            }
+          },
+          "fill": {
+            "default": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "default-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
+            "hover": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "hover-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
+            "focus": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
+            "disable": {
+              "value": "#ececec",
+              "group": "color"
+            },
+            "disable-tailwind": {
+              "value": "236 236 236",
+              "group": "color"
+            },
+            "press": {
+              "value": "#f8f6f6",
+              "group": "color"
+            },
+            "press-tailwind": {
+              "value": "248 246 246",
+              "group": "color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "rgba(0, 0, 0, 0.50)",
+              "group": "color"
+            },
+            "hover": {
+              "value": "rgba(0, 0, 0, 0.50)",
+              "group": "color"
+            },
+            "focus": {
+              "value": "rgba(0, 0, 0, 0.50)",
+              "group": "color"
+            },
+            "press": {
+              "value": "rgba(0, 0, 0, 0.50)",
+              "group": "color"
+            },
+            "disable": {
+              "value": "rgba(153, 153, 153, 0.50)",
+              "group": "color"
+            }
+          }
         }
       }
     }

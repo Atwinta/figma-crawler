@@ -1,21 +1,21 @@
 {
-	"name": "@5th_ru/figma-crawler",
+	"name": "@atwinta/figma-crawler",
 	"version": "0.5.2",
 	"description": "",
 	"license": "MIT",
 	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@g.5th.ru/5th_ru/figma-crawler.git"
-	},
+    "type": "git",
+    "url": "https://github.com/Atwinta/figma-crawler"
+  },
 	"dependencies": {
 		"axios": "0.27.2",
+		"d-forest": "3.2.4",
 		"deep-diff": "1.0.2",
 		"dotenv": "9.0.2",
 		"lodash": "4.17.21",
 		"minimist": "1.2.6"
 	},
 	"publishConfig": {
-		"access": "restricted",
-		"@5th_ru:registry": "https://g.5th.ru/api/v4/projects/56/packages/npm/"
-	}
+    "registry": "https://npm.pkg.github.com"
+  }
 }

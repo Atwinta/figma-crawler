@@ -1,0 +1,18 @@
+{
+  "text": {
+    "caption": {
+      "fontSize": {
+        "value": "12px",
+        "group": "typography"
+      },
+      "lineHeight": {
+        "value": "1.25",
+        "group": "typography"
+      },
+      "letterSpacing": {
+        "value": "normal",
+        "group": "typography"
+      }
+    }
+  }
+}

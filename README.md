@@ -1,8 +1,8 @@
 # Figma Crawler
 
-Выгрузка стилей из приготовленого для сего действа файла [Figma](https://www.figma.com) на базе [шаблона](https://www.figma.com/file/vuTgbOSDxzY6pryHtZavBU).
+Выгрузка стилей из [Figma](https://www.figma.com).
 
-Основано на [figma-to-web](https://github.com/Severenit/figma-to-web)
+Основано на [figma-to-web](https://github.com/Severenit/figma-to-web).
 
 ## Выгружаемые категории токенов
 
@@ -66,6 +66,7 @@
   "clear": false,
   "type": "files",
   "colorFormat": "css",
+  "colorTailwind": false,
   "platformsMode": "split",
   "platformsOrder": [
     "desktop-large",
@@ -118,6 +119,20 @@
       <td>css</td>
     </tr>
     <tr>
+      <td>colorTailwind</td>
+      <td>Boolean</td>
+      <td>
+        Добавить значения цветов (только для тех, что без альфа-канала) в формате только rgb только с цветовыми каналами для <a href="https://tailwindcss.com/docs/customizing-colors#using-css-variables" target="_blank">Tailwindcss</a>.
+        Будут созданы с суффиксом <code>-tailwind</code>.<br>
+        Пример:<br>
+        <code>
+          color.content.base = { "value": "#333333", "group": "color" }
+          color.content.base-tailwind = { "value": "51 51 51", "group": "color" }
+        </code>
+      </td>
+      <td>false</td>
+    </tr>
+    <tr>
       <td>platformsMode</td>
       <td>String<'split' | 'join'></td>
       <td>
@@ -145,10 +160,10 @@
 
 ## Установка
 
-Должен быть [настроен](https://g.5th.ru/5th_ru/tips-tricks-and-docs/-/blob/master/nodejs/@5th_ru.md) `@5th_ru` npm package registry.
+Должен быть [настроен](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry) `@atwinta` npm package registry.
 
 ```sh
-npm i -D @5th_ru/figma-crawler
+npm i -D @atwinta/figma-crawler
 ```
 
 ## Использование
@@ -178,7 +193,7 @@ OPTIONS
 
 2. В корне проекта создать в случае отсутсвия `.env` файл (можно скопировать `.env.example` из примера):
 ```sh
-cp ./node_modules/@5th_ru/figma-crawler/example/.env.example ./.env
+cp ./node_modules/@atwinta/figma-crawler/example/.env.example ./.env
 ```
 3. Добавить переменную `FIGMA_DEV_TOKEN` в файл `.env` со значением своего девелоперского токена от `Figma`:
 ```
@@ -188,12 +203,29 @@ FIGMA_DEV_TOKEN=<YOUR_TOKEN>
 
 5. Запускаем:
 ```sh
-node node_modules/@5th_ru/figma-crawler/main.js -c figmacrawler.config.json
+node node_modules/@atwinta/figma-crawler/main.js -c figmacrawler.config.json
 ```
 
 ## Генерация стилей
 
 Пример генерации с помощью [Style Dictionary](https://amzn.github.io/style-dictionary) находится в директории [example](example)
+
+```sh
+node ./style-dictionary.config.js
+```
+
+### Подключение стилей
+
+В адаптивном режиме (`join`), подключить сгенерированные стили с помощью [postcss-import](https://github.com/postcss/postcss-import) с указанием media query:
+```css
+@import './common/color.css';
+@import './common/color_override_inverse.css';
+@import './common/root.css';
+@import './phone/root.css';
+@import './tablet/root.css' (min-width: 768px);
+@import './desktop/root.css' (min-width: 1280px);
+@import './desktop-large/root.css' (min-width: 1680px);
+```
 
 ## Полезные ссылки
 - [Figma API](https://www.figma.com/developers/api)

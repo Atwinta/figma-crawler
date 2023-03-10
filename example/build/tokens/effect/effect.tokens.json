@@ -1,18 +1,22 @@
 {
   "effect": {
     "shadow": {
-      "control": {
+      "button": {
         "view": {
-          "default": {
-            "focused": {
-              "value": "0px 0px 0px 1px color(#751222 a(80%))",
-              "group": "effect"
+          "main": {
+            "border": {
+              "focus": {
+                "value": "0px 0px 0px 1px rgba(117, 18, 34, 0.80)",
+                "group": "effect"
+              }
             }
           },
-          "action": {
-            "focused": {
-              "value": "0px 0px 0px 1px color(#a80a24 a(70%))",
-              "group": "effect"
+          "second": {
+            "border": {
+              "focus": {
+                "value": "0px 0px 0px 1px rgba(117, 18, 34, 0.80)",
+                "group": "effect"
+              }
             }
           }
         }

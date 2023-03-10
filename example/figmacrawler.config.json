@@ -1,7 +1,8 @@
 {
-  "fileKey": "vuTgbOSDxzY6pryHtZavBU",
+  "fileKey": "GzA9igVQaY9daGLvpgizKz",
   "output": "./build/tokens",
   "platformsMode": "join",
-	"colorFormat": "postcss",
+	"colorFormat": "css",
+  "colorTailwind": true,
   "clear": true
 }

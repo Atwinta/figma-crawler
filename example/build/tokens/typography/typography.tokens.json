@@ -6,7 +6,7 @@
         "group": "typography"
       }
     },
-    "headline": {
+    "heading": {
       "fontFamily": {
         "value": "'Fira Sans', sans-serif",
         "group": "typography"

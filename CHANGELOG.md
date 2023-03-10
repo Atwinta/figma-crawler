@@ -1,5 +1,10 @@
 # История изменений
 
+## 0.6.0
+- Обновленная логика работы с цветами
+- добавлен формат цветов для [tailwindcss](https://tailwindcss.com/docs/customizing-colors#using-css-variables). Параметр `colorTailwind`
+- bugfixes and improvements
+
 ## 0.5.2
 - Текстовые стили: не выгружать скрытые ноды
 

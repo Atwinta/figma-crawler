@@ -1,0 +1,7 @@
+{
+  "button-view-second": {
+    "fontFamily": {
+      "value": "{typography.controls.fontFamily.value}"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "button-view-main": {
+    "size": {
+      "m": {
+        "borderRadius": {
+          "value": "4px",
+          "group": "size"
+        },
+        "borderWidth": {
+          "value": 0,
+          "group": "size"
+        },
+        "gap": {
+          "value": "5px",
+          "group": "size"
+        },
+        "paddingTop": {
+          "value": "6px",
+          "group": "size"
+        },
+        "paddingBottom": {
+          "value": "6px",
+          "group": "size"
+        },
+        "paddingLeft": {
+          "value": "12px",
+          "group": "size"
+        },
+        "paddingRight": {
+          "value": "12px",
+          "group": "size"
+        },
+        "fontSize": {
+          "value": "{text.control-m.fontSize.value}",
+          "group": "typography"
+        },
+        "lineHeight": {
+          "value": "{text.control-m.lineHeight.value}",
+          "group": "typography"
+        },
+        "letterSpacing": {
+          "value": "{text.control-m.letterSpacing.value}",
+          "group": "typography"
+        },
+        "icon": {
+          "width": {
+            "value": "10px",
+            "group": "size"
+          },
+          "height": {
+            "value": "10px",
+            "group": "size"
+          }
+        }
+      },
+      "s": {
+        "borderRadius": {
+          "value": "4px",
+          "group": "size"
+        },
+        "borderWidth": {
+          "value": 0,
+          "group": "size"
+        },
+        "gap": {
+          "value": "4px",
+          "group": "size"
+        },
+        "paddingTop": {
+          "value": "4px",
+          "group": "size"
+        },
+        "paddingBottom": {
+          "value": "4px",
+          "group": "size"
+        },
+        "paddingLeft": {
+          "value": "8px",
+          "group": "size"
+        },
+        "paddingRight": {
+          "value": "8px",
+          "group": "size"
+        },
+        "fontSize": {
+          "value": "{text.control-s.fontSize.value}",
+          "group": "typography"
+        },
+        "lineHeight": {
+          "value": "{text.control-s.lineHeight.value}",
+          "group": "typography"
+        },
+        "letterSpacing": {
+          "value": "{text.control-s.letterSpacing.value}",
+          "group": "typography"
+        },
+        "icon": {
+          "width": {
+            "value": "8px",
+            "group": "size"
+          },
+          "height": {
+            "value": "8px",
+            "group": "size"
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,16 +4,29 @@
  */
 
 .theme__color_override_inverse {
-  --color-link-border-disabled: color(#a5a5a5 a(30%));
-  --color-link-typo-disabled: #a4a4a4;
-  --color-link-view-text-border-visited: color(#dfdede a(30%));
-  --color-link-view-text-border-hovered: #ffffff;
-  --color-link-view-text-border-base: color(#ffffff a(30%));
-  --color-link-view-text-typo-visited: #dfdede;
-  --color-link-view-text-typo-hovered: #ffffff;
-  --color-link-view-text-typo-base: #ffffff;
-  --color-content-ghost: #a9afcb;
-  --color-content-title: #ffffff;
-  --color-content-base: #ffffff;
+  --color-link-view-second-border-focus-tailwind: 129 142 255;
+  --color-link-view-second-border-focus: #818eff;
+  --color-link-view-second-border-disable: rgba(165, 165, 165, 0.30);
+  --color-link-view-second-border-visit: rgba(223, 222, 222, 0.30);
+  --color-link-view-second-border-hover-tailwind: 255 255 255;
+  --color-link-view-second-border-hover: #ffffff;
+  --color-link-view-second-border-default: rgba(255, 255, 255, 0.30);
+  --color-link-view-second-typo-disable-tailwind: 164 164 164;
+  --color-link-view-second-typo-disable: #a4a4a4;
+  --color-link-view-second-typo-visit-tailwind: 223 222 222;
+  --color-link-view-second-typo-visit: #dfdede;
+  --color-link-view-second-typo-focus-tailwind: 255 255 255;
+  --color-link-view-second-typo-focus: #ffffff;
+  --color-link-view-second-typo-hover-tailwind: 255 255 255;
+  --color-link-view-second-typo-hover: #ffffff;
+  --color-link-view-second-typo-default-tailwind: 255 255 255;
+  --color-link-view-second-typo-default: #ffffff;
+  --color-content-inverse-tailwind: 51 51 51;
   --color-content-inverse: #333333;
+  --color-content-ghost-tailwind: 169 175 203;
+  --color-content-ghost: #a9afcb;
+  --color-content-title-tailwind: 255 255 255;
+  --color-content-title: #ffffff;
+  --color-content-base-tailwind: 255 255 255;
+  --color-content-base: #ffffff;
 }

@@ -1,66 +1,114 @@
 {
   "color": {
     "content": {
-      "inverse": {
-        "value": "#333333",
-        "group": "color"
-      },
       "base": {
         "value": "#ffffff",
+        "group": "color"
+      },
+      "base-tailwind": {
+        "value": "255 255 255",
         "group": "color"
       },
       "title": {
         "value": "#ffffff",
         "group": "color"
       },
+      "title-tailwind": {
+        "value": "255 255 255",
+        "group": "color"
+      },
       "ghost": {
         "value": "#a9afcb",
+        "group": "color"
+      },
+      "ghost-tailwind": {
+        "value": "169 175 203",
+        "group": "color"
+      },
+      "inverse": {
+        "value": "#333333",
+        "group": "color"
+      },
+      "inverse-tailwind": {
+        "value": "51 51 51",
         "group": "color"
       }
     },
     "link": {
       "view": {
-        "text": {
+        "second": {
           "typo": {
-            "base": {
+            "default": {
               "value": "#ffffff",
               "group": "color"
             },
-            "hovered": {
+            "default-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
+            "hover": {
               "value": "#ffffff",
               "group": "color"
             },
-            "visited": {
+            "hover-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
+            "focus": {
+              "value": "#ffffff",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
+            "visit": {
               "value": "#dfdede",
+              "group": "color"
+            },
+            "visit-tailwind": {
+              "value": "223 222 222",
+              "group": "color"
+            },
+            "disable": {
+              "value": "#a4a4a4",
+              "group": "color"
+            },
+            "disable-tailwind": {
+              "value": "164 164 164",
               "group": "color"
             }
           },
           "border": {
-            "base": {
-              "value": "color(#ffffff a(30%))",
+            "default": {
+              "value": "rgba(255, 255, 255, 0.30)",
               "group": "color"
             },
-            "hovered": {
+            "hover": {
               "value": "#ffffff",
               "group": "color"
             },
-            "visited": {
-              "value": "color(#dfdede a(30%))",
+            "hover-tailwind": {
+              "value": "255 255 255",
+              "group": "color"
+            },
+            "visit": {
+              "value": "rgba(223, 222, 222, 0.30)",
+              "group": "color"
+            },
+            "disable": {
+              "value": "rgba(165, 165, 165, 0.30)",
+              "group": "color"
+            },
+            "focus": {
+              "value": "#818eff",
+              "group": "color"
+            },
+            "focus-tailwind": {
+              "value": "129 142 255",
               "group": "color"
             }
           }
-        }
-      },
-      "typo": {
-        "disabled": {
-          "value": "#a4a4a4",
-          "group": "color"
-        }
-      },
-      "border": {
-        "disabled": {
-          "value": "color(#a5a5a5 a(30%))",
-          "group": "color"
         }
       }
     }
