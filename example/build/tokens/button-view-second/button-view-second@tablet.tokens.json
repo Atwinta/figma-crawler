@@ -3,7 +3,7 @@
     "size": {
       "m": {
         "borderRadius": {
-          "value": 4,
+          "value": "4px",
           "group": "size"
         },
         "borderWidth": {
@@ -11,7 +11,7 @@
           "group": "size"
         },
         "gap": {
-          "value": 4,
+          "value": "4px",
           "group": "size"
         },
         "paddingTop": {
@@ -55,7 +55,7 @@
       },
       "s": {
         "borderRadius": {
-          "value": 4,
+          "value": "4px",
           "group": "size"
         },
         "borderWidth": {
@@ -63,7 +63,7 @@
           "group": "size"
         },
         "gap": {
-          "value": 3,
+          "value": "3px",
           "group": "size"
         },
         "paddingTop": {
